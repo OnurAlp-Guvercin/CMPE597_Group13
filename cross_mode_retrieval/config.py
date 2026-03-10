@@ -2,7 +2,6 @@ import os
 from dataclasses import dataclass, field
 from typing import List
 
-# Paths
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 IMAGE_DIR = os.path.join(DATA_DIR, "images")
@@ -17,42 +16,42 @@ os.makedirs(HISTORY_DIR, exist_ok=True)
 
 @dataclass
 class DataConfig:
-    """Settings that control dataset loading & splits."""
+    """Dataset paths and split settings."""
     train_json: str = os.path.join(DATA_DIR, "memes-train.json")
     test_json: str = os.path.join(DATA_DIR, "memes-test.json")
     image_dir: str = IMAGE_DIR
-    val_ratio: float = 0.1          # fraction of train used as validation
+    val_ratio: float = 0.1  # train split'ten validation oranı
     seed: int = 42
-    image_size: int = 224
+    image_size: int = 224  # tüm görseller bu boyuta çekilir
 
 
 @dataclass
 class TrainConfig:
-    """Shared training hyper-parameters."""
+    """Shared training hyperparameters."""
     batch_size: int = 192
     num_workers: int = 12
     learning_rate: float = 1e-4
     weight_decay: float = 1e-4
     epochs: int = 15
-    patience: int = 4               # early-stopping patience
-    temperature: float = 0.07       # contrastive loss temperature
-    embed_dim: int = 256             # projection dimension
+    patience: int = 4  # early stopping sabrı
+    temperature: float = 0.07  # InfoNCE sıcaklığı
+    embed_dim: int = 256  # ortak embedding boyutu
     seed: int = 42
-    device: str = "cuda"             # overridden if CUDA unavailable
-    fp16: bool = True                # mixed-precision training
+    device: str = "cuda"  # CUDA yoksa main.py içinde cpu'ya düşer
+    fp16: bool = False  # mixed precision aç/kapat
 
 
 @dataclass
 class CLIPZeroShotConfig:
-    """Config for zero-shot CLIP evaluation."""
+    """Zero-shot CLIP settings."""
     clip_model_name: str = "ViT-B-32"
     clip_pretrained: str = "openai"
 
 
 @dataclass
 class CustomModelConfig:
-    """Config for the custom dual-encoder trained from scratch."""
-    image_backbone: str = "resnet50"   # torchvision backbone
+    """Custom dual-encoder settings."""
+    image_backbone: str = "resnet50"
     text_model: str = "distilbert-base-uncased"
     embed_dim: int = 256
     freeze_image_backbone: bool = False
@@ -62,7 +61,7 @@ class CustomModelConfig:
 
 @dataclass
 class LoRAFinetuneConfig:
-    """Config for LoRA-based CLIP fine-tuning."""
+    """LoRA fine-tuning settings."""
     clip_model_name: str = "ViT-B-32"
     clip_pretrained: str = "openai"
     lora_r: int = 8
@@ -73,11 +72,11 @@ class LoRAFinetuneConfig:
     )
     learning_rate: float = 1e-4
     epochs: int = 8
-    embed_dim: int = 512
+    embed_dim: int = 512  # CLIP ViT-B/32 text/image çıkış boyutu
 
 
 @dataclass
 class FusionConfig:
-    """Settings for image+title fusion (Type 2 input)."""
-    strategy: str = "concat_project"   # "concat_project" | "cross_attention" | "add"
-    hidden_dim: int = 512
+    """Fusion settings for Type 2 queries."""
+    strategy: str = "weighted_sum"  # concat_project | cross_attention | add | weighted_sum | gated
+    hidden_dim: int = 512  # concat_project için ara katman boyutu

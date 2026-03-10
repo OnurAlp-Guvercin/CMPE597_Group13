@@ -2,29 +2,27 @@ import json
 import os
 from typing import Callable, Dict, List, Optional, Tuple
 
+import numpy as np
 import torch
 from PIL import Image
 from torch.utils.data import Dataset, Subset
 from torchvision import transforms
-import numpy as np
 
 
-# Default image transform (ImageNet stats)
 def default_transform(image_size: int = 224) -> transforms.Compose:
-    return transforms.Compose([
-        transforms.Resize((image_size, image_size)),
-        transforms.ToTensor(),
-        transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                             std=[0.229, 0.224, 0.225]),
-    ])
+    return transforms.Compose(
+        [
+            transforms.Resize((image_size, image_size)),
+            transforms.ToTensor(),
+            transforms.Normalize(
+                mean=[0.485, 0.456, 0.406],
+                std=[0.229, 0.224, 0.225],
+            ),
+        ]
+    )
 
 
 class MemecapDataset(Dataset):
-    """
-    Full MemeCap dataset for one split (train or test).
-    Images that are missing on disk are replaced by a blank tensor.
-    """
-
     def __init__(
         self,
         json_path: str,
@@ -42,50 +40,40 @@ class MemecapDataset(Dataset):
         self.use_img_caption = use_img_caption
 
     @staticmethod
-    def _to_text(value: object) -> str:
-        """Normalize potentially dirty JSON values into a safe string."""
+    def _to_text(value: object, first_item: bool = False) -> str:
+        if first_item and isinstance(value, list):
+            value = value[0] if value else ""
+        if isinstance(value, list):
+            value = value[0] if value else ""
         if value is None:
             return ""
         if isinstance(value, float) and np.isnan(value):
             return ""
-        if isinstance(value, str):
-            return value
-        return str(value)
+        return value if isinstance(value, str) else str(value)
 
-    @classmethod
-    def _first_text(cls, value: object) -> str:
-        """Extract first element from list-like text fields and normalize."""
-        if isinstance(value, list):
-            if not value:
-                return ""
-            return cls._to_text(value[0])
-        return cls._to_text(value)
-
-    # helpers
     def _load_image(self, fname: str) -> Image.Image:
         path = os.path.join(self.image_dir, fname)
         try:
-            img = Image.open(path).convert("RGB")
+            return Image.open(path).convert("RGB")
         except Exception:
-            # Missing / corrupt image → blank placeholder
-            img = Image.new("RGB", (self.image_size, self.image_size), (0, 0, 0))
-        return img
+            return Image.new("RGB", (self.image_size, self.image_size), (0, 0, 0))
 
-    # Dataset API
     def __len__(self) -> int:
         return len(self.samples)
 
     def __getitem__(self, idx: int) -> Dict:
         entry = self.samples[idx]
-        image = self._load_image(entry.get("img_fname", ""))
-        image = self.transform(image)
+        get = entry.get
+        image = self.transform(self._load_image(get("img_fname", "")))
 
-        # Take the first caption / img_caption if there are multiple
-        meme_caption = self._first_text(entry.get("meme_captions", [""]))
-        img_caption = self._first_text(entry.get("img_captions", [""]))
-        title = self._to_text(entry.get("title", ""))
+        meme_caption = self._to_text(get("meme_captions", [""]), first_item=True)
+        img_caption = self._to_text(get("img_captions", [""]), first_item=True)
+        title = self._to_text(get("title", ""))
 
-        out = {
+        if self.use_img_caption:
+            title = f"{title} [SEP] {img_caption}" if title else img_caption
+
+        return {
             "image": image,
             "title": title,
             "meme_caption": meme_caption,
@@ -93,20 +81,12 @@ class MemecapDataset(Dataset):
             "index": idx,
         }
 
-        # Optionally append the literal image caption to the title for richer context
-        if self.use_img_caption:
-            out["title"] = f"{title} [SEP] {img_caption}" if title else img_caption
 
-        return out
-
-
-# Train / val split helper
 def train_val_split(
     dataset: MemecapDataset,
     val_ratio: float = 0.1,
     seed: int = 42,
 ) -> Tuple[Subset, Subset]:
-    """Randomly split dataset into train / val subsets."""
     rng = np.random.RandomState(seed)
     n = len(dataset)
     indices = rng.permutation(n).tolist()
@@ -116,18 +96,11 @@ def train_val_split(
     return Subset(dataset, train_idx), Subset(dataset, val_idx)
 
 
-# Collate for raw-string batches 
 def collate_fn(batch: List[Dict]) -> Dict:
-    """Stack images into a tensor; keep texts as lists of strings."""
-    images = torch.stack([b["image"] for b in batch])
-    titles = [b["title"] for b in batch]
-    meme_captions = [b["meme_caption"] for b in batch]
-    img_captions = [b["img_caption"] for b in batch]
-    indices = torch.tensor([b["index"] for b in batch], dtype=torch.long)
     return {
-        "image": images,
-        "title": titles,
-        "meme_caption": meme_captions,
-        "img_caption": img_captions,
-        "index": indices,
+        "image": torch.stack([item["image"] for item in batch]),
+        "title": [item["title"] for item in batch],
+        "meme_caption": [item["meme_caption"] for item in batch],
+        "img_caption": [item["img_caption"] for item in batch],
+        "index": torch.tensor([item["index"] for item in batch], dtype=torch.long),
     }

@@ -30,7 +30,8 @@ cross_mode_retrieval/data/images/
 cross_mode_retrieval/data/*.json
 
 # ── Model checkpoints & outputs ───────────────────────────────────────────────
-cross_mode_retrieval/outputs/
+cross_mode_retrieval/outputs_1/
+cross_mode_retrieval/outputs_2/
 
 # ── OS & editor ───────────────────────────────────────────────────────────────
 .DS_Store
