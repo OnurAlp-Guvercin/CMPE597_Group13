@@ -47,14 +47,6 @@ class CLIPZeroShot(nn.Module):
         tokens = self.tokenizer(texts).to(self.device)
         return self.clip_model.encode_text(tokens)
 
-    def get_query_type1(self, images: torch.Tensor) -> torch.Tensor:
-        return self.encode_images(images)
-
-    def get_query_type2(self, images: torch.Tensor, titles: List[str]) -> torch.Tensor:
-        img_emb = self.encode_images(images)
-        title_emb = self.encode_texts(titles)
-        return self.fusion(img_emb, title_emb)
-
     def get_candidates(self, captions: List[str], device: str = "") -> torch.Tensor:
         return self.encode_texts(captions)
 

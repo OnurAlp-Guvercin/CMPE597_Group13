@@ -129,29 +129,19 @@ class CustomDualEncoder(nn.Module):
         self.logit_scale = nn.Parameter(torch.log(torch.tensor(1.0 / temperature)))
         self.fusion = build_fusion(fusion_strategy, embed_dim, embed_dim, fusion_hidden)
 
-    def encode_image(self, images: torch.Tensor) -> torch.Tensor:
+    def encode_images(self, images: torch.Tensor) -> torch.Tensor:
         return F.normalize(self.image_encoder(images), dim=-1)
 
-    def encode_text(self, texts: List[str], device: torch.device) -> torch.Tensor:
+    def encode_texts(self, texts: List[str]) -> torch.Tensor:
+        device = next(self.parameters()).device
         return F.normalize(self.text_encoder(texts, device), dim=-1)
-
-    def get_query_type1(self, images: torch.Tensor) -> torch.Tensor:
-        return self.encode_image(images)
-
-    def get_query_type2(self, images: torch.Tensor, titles: List[str]) -> torch.Tensor:
-        img_emb = self.encode_image(images)
-        title_emb = self.encode_text(titles, images.device)
-        fused = self.fusion(img_emb, title_emb)
-        return F.normalize(fused, dim=-1)
 
     def get_candidates(
         self,
         captions: List[str],
         device: Optional[torch.device] = None,
     ) -> torch.Tensor:
-        if device is None:
-            device = next(self.parameters()).device
-        return self.encode_text(captions, device)
+        return self.encode_texts(captions)
 
     def compute_loss(
         self,
@@ -173,10 +163,10 @@ class CustomDualEncoder(nn.Module):
         input_type: int = 1,
     ) -> torch.Tensor:
         if input_type == 1:
-            query = self.get_query_type1(images)
+            query = self.encode_images(images)
         else:
             assert titles is not None, "Titles required for Type 2"
-            query = self.get_query_type2(images, titles)
+            query = F.normalize(self.fusion(self.encode_images(images), self.encode_texts(titles)), dim=-1)
 
-        caption_emb = self.encode_text(meme_captions, images.device)
+        caption_emb = self.encode_texts(meme_captions)
         return self.compute_loss(query, caption_emb)

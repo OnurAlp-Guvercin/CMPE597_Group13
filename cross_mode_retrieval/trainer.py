@@ -5,12 +5,21 @@ from typing import Any, Dict, List, Optional
 
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 from torch.cuda.amp import GradScaler, autocast
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 from config import CHECKPOINT_DIR, HISTORY_DIR
 from evaluation import evaluate_retrieval, print_metrics
+
+
+def get_query(model: Any, images: torch.Tensor, titles: List[str], input_type: int) -> torch.Tensor:
+    if input_type == 1:
+        return model.encode_images(images)
+    img_emb = model.encode_images(images)
+    title_emb = model.encode_texts(titles)
+    return F.normalize(model.fusion(img_emb, title_emb), dim=-1)
 
 
 @torch.no_grad()
@@ -29,11 +38,7 @@ def collect_embeddings(
         titles: List[str] = batch["title"]
         captions: List[str] = batch["meme_caption"]
 
-        query = (
-            model.get_query_type1(images)
-            if input_type == 1
-            else model.get_query_type2(images, titles)
-        )
+        query = get_query(model, images, titles, input_type)
         candidates = model.get_candidates(captions, device)
 
         all_query.append(query.cpu())
