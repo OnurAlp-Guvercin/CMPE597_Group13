@@ -138,12 +138,3 @@ Previous run (`concat_project`):
 5. Practical takeaway from current experiments:
    - If compute budget allows training, prefer `CLIP + LoRA` with Type 2 + `weighted_sum`.
    - For no-training evaluation, zero-shot Type 1 remains a strong baseline, while zero-shot Type 2 is now usable with `weighted_sum`.
-
-## Reproducibility Artifacts
-
-- Final comparison: [`outputs/results.json`](./outputs/results.json)
-- Per-epoch logs:
-  - [`outputs/history/custom_type1_history.json`](./outputs/history/custom_type1_history.json)
-  - [`outputs/history/custom_type2_history.json`](./outputs/history/custom_type2_history.json)
-  - [`outputs/history/lora_type1_history.json`](./outputs/history/lora_type1_history.json)
-  - [`outputs/history/lora_type2_history.json`](./outputs/history/lora_type2_history.json)
