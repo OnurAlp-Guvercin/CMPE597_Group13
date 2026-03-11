@@ -9,22 +9,17 @@ from torch.utils.data import Dataset, Subset
 from torchvision import transforms
 
 
-def train_transform(image_size: int = 224) -> transforms.Compose:
-    return transforms.Compose([
-        transforms.RandomResizedCrop(image_size, scale=(0.7, 1.0)),
-        transforms.RandomHorizontalFlip(),
-        transforms.ColorJitter(brightness=0.3, contrast=0.3, saturation=0.3, hue=0.1),
-        transforms.ToTensor(),
-        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-    ])
-
-
 def default_transform(image_size: int = 224) -> transforms.Compose:
-    return transforms.Compose([
-        transforms.Resize((image_size, image_size)),
-        transforms.ToTensor(),
-        transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
-    ])
+    return transforms.Compose(
+        [
+            transforms.Resize((image_size, image_size)),
+            transforms.ToTensor(),
+            transforms.Normalize(
+                mean=[0.485, 0.456, 0.406],
+                std=[0.229, 0.224, 0.225],
+            ),
+        ]
+    )
 
 
 class MemecapDataset(Dataset):

@@ -28,8 +28,8 @@ class DataConfig:
 @dataclass
 class TrainConfig:
     """Shared training hyperparameters."""
-    batch_size: int = 64
-    num_workers: int = 4
+    batch_size: int = 192
+    num_workers: int = 12
     learning_rate: float = 1e-4
     weight_decay: float = 1e-4
     epochs: int = 15
@@ -39,7 +39,6 @@ class TrainConfig:
     seed: int = 42
     device: str = "cuda"  # CUDA yoksa main.py içinde cpu'ya düşer
     fp16: bool = False  # mixed precision aç/kapat
-    warmup_epochs: int = 2  # cosine schedule öncesi warmup
 
 
 @dataclass
@@ -53,7 +52,7 @@ class CLIPZeroShotConfig:
 class CustomModelConfig:
     """Custom dual-encoder settings."""
     image_backbone: str = "resnet50"
-    text_model: str = "bert-base-uncased"
+    text_model: str = "distilbert-base-uncased"
     embed_dim: int = 256
     freeze_image_backbone: bool = False
     freeze_text_backbone: bool = False

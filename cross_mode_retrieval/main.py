@@ -6,6 +6,7 @@ import random
 import numpy as np
 import torch
 from torch.optim import AdamW
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 from torch.utils.data import DataLoader
 
 from config import (
@@ -17,8 +18,8 @@ from config import (
     OUTPUT_DIR,
     TrainConfig,
 )
-from data.dataset import MemecapDataset, collate_fn, default_transform, train_transform, train_val_split
-from trainer import evaluate_model, get_warmup_cosine_scheduler, train_model
+from data.dataset import MemecapDataset, collate_fn, default_transform, train_val_split
+from trainer import evaluate_model, train_model
 
 
 def seed_everything(seed: int = 42) -> None:
@@ -33,12 +34,10 @@ def seed_everything(seed: int = 42) -> None:
 def build_loaders(
     data_cfg: DataConfig,
     transform=None,
-    eval_transform=None,
     use_img_caption: bool = False,
     batch_size: int = 64,
     num_workers: int = 4,
 ):
-    _eval_tf = eval_transform if eval_transform is not None else transform
     full_train = MemecapDataset(
         data_cfg.train_json,
         data_cfg.image_dir,
@@ -46,22 +45,14 @@ def build_loaders(
         image_size=data_cfg.image_size,
         use_img_caption=use_img_caption,
     )
-    full_val = MemecapDataset(
-        data_cfg.train_json,
-        data_cfg.image_dir,
-        transform=_eval_tf,
-        image_size=data_cfg.image_size,
-        use_img_caption=use_img_caption,
-    )
     test_ds = MemecapDataset(
         data_cfg.test_json,
         data_cfg.image_dir,
-        transform=_eval_tf,
+        transform=transform,
         image_size=data_cfg.image_size,
         use_img_caption=use_img_caption,
     )
-    train_sub, _ = train_val_split(full_train, data_cfg.val_ratio, data_cfg.seed)
-    _, val_sub = train_val_split(full_val, data_cfg.val_ratio, data_cfg.seed)
+    train_sub, val_sub = train_val_split(full_train, data_cfg.val_ratio, data_cfg.seed)
 
     loader_kwargs = {
         "collate_fn": collate_fn,
@@ -160,8 +151,7 @@ def run_custom(
 
         train_loader, val_loader, test_loader = build_loaders(
             data_cfg,
-            transform=train_transform(data_cfg.image_size),
-            eval_transform=default_transform(data_cfg.image_size),
+            transform=default_transform(data_cfg.image_size),
             use_img_caption=use_img_caption,
             batch_size=train_cfg.batch_size,
             num_workers=train_cfg.num_workers,
@@ -172,9 +162,7 @@ def run_custom(
             lr=train_cfg.learning_rate,
             weight_decay=train_cfg.weight_decay,
         )
-        scheduler = get_warmup_cosine_scheduler(
-            optimizer, train_cfg.warmup_epochs, train_cfg.epochs
-        )
+        scheduler = ReduceLROnPlateau(optimizer, mode="max", factor=0.5, patience=2)
 
         train_model(
             model,
@@ -246,9 +234,7 @@ def run_lora(
             lr=lora_cfg.learning_rate,
             weight_decay=train_cfg.weight_decay,
         )
-        scheduler = get_warmup_cosine_scheduler(
-            optimizer, train_cfg.warmup_epochs, lora_cfg.epochs
-        )
+        scheduler = ReduceLROnPlateau(optimizer, mode="max", factor=0.5, patience=2)
 
         train_model(
             model,
@@ -303,7 +289,7 @@ def parse_args():
     parser.add_argument(
         "--task",
         type=str,
-        default="custom",
+        default="all",
         choices=["all", "zeroshot", "custom", "lora"],
         help="Which experiment to run.",
     )
