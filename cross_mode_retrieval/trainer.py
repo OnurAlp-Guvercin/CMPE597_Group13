@@ -1,4 +1,5 @@
 import json
+import math
 import os
 import time
 from typing import Any, Dict, List, Optional
@@ -11,6 +12,19 @@ from tqdm import tqdm
 
 from config import CHECKPOINT_DIR, HISTORY_DIR
 from evaluation import evaluate_retrieval, print_metrics
+
+
+def get_warmup_cosine_scheduler(
+    optimizer: torch.optim.Optimizer,
+    warmup_epochs: int,
+    total_epochs: int,
+) -> torch.optim.lr_scheduler.LambdaLR:
+    def lr_lambda(epoch: int) -> float:
+        if epoch < warmup_epochs:
+            return (epoch + 1) / max(warmup_epochs, 1)
+        progress = (epoch - warmup_epochs) / max(total_epochs - warmup_epochs, 1)
+        return 0.5 * (1.0 + math.cos(math.pi * progress))
+    return torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda)
 
 
 @torch.no_grad()
@@ -173,7 +187,10 @@ def train_model(
         )
 
         if scheduler is not None:
-            scheduler.step(val_metrics["R@5"])
+            if isinstance(scheduler, torch.optim.lr_scheduler.ReduceLROnPlateau):
+                scheduler.step(val_metrics["R@5"])
+            else:
+                scheduler.step()
 
         improved = val_metrics["R@5"] > best_r5
         if improved:
