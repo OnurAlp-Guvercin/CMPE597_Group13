@@ -41,7 +41,6 @@ cross_mode_retrieval/
 │   ├── memes-test.json
 │   └── images/
 └── outputs/
-    ├── checkpoints/
     ├── history/
     └── results.json
 ```
@@ -163,4 +162,3 @@ Type 1 is fusion-independent (single image embedding). Type 2 fuses image + titl
 - Final comparison: [`outputs/results.json`](./outputs/results.json)
 - Per-epoch logs: `outputs/history/{custom|lora}_{fusion_strategy}_type{1|2}_history.json`
   - e.g. [`outputs/history/lora_weighted_sum_type2_history.json`](./outputs/history/lora_weighted_sum_type2_history.json)
-- Checkpoints: `outputs/checkpoints/{custom|lora}_{fusion_strategy}_type{1|2}_best.pt`
