@@ -29,6 +29,8 @@ def seed_everything(seed: int = 42) -> None:
     torch.cuda.manual_seed_all(seed)
     torch.backends.cudnn.deterministic = False
     torch.backends.cudnn.benchmark = True
+    torch.backends.cuda.matmul.allow_tf32 = True
+    torch.backends.cudnn.allow_tf32 = True
 
 
 def build_loaders(
@@ -175,7 +177,7 @@ def run_custom(
             input_type=input_type,
             device=device,
             use_fp16=train_cfg.fp16,
-            run_name=f"custom_type{input_type}",
+            run_name=f"custom_{fusion_cfg.strategy}_type{input_type}",
         )
 
         results[f"custom_type{input_type}"] = evaluate_model(
@@ -247,7 +249,7 @@ def run_lora(
             input_type=input_type,
             device=device,
             use_fp16=train_cfg.fp16,
-            run_name=f"lora_type{input_type}",
+            run_name=f"lora_{fusion_cfg.strategy}_type{input_type}",
         )
 
         results[f"lora_type{input_type}"] = evaluate_model(
@@ -305,6 +307,13 @@ def parse_args():
         action="store_true",
         help="Incorporate literal image caption into title text.",
     )
+    parser.add_argument(
+        "--fusion_strategy",
+        type=str,
+        default="all",
+        choices=["concat_project", "cross_attention", "add", "weighted_sum", "gated", "all"],
+        help="Fusion strategy to use. 'all' runs each strategy sequentially.",
+    )
     parser.add_argument("--epochs", type=int, default=None)
     parser.add_argument("--batch_size", type=int, default=None)
     parser.add_argument("--lr", type=float, default=None)
@@ -323,6 +332,14 @@ def main() -> None:
     lora_cfg = LoRAFinetuneConfig()
     fusion_cfg = FusionConfig()
 
+    ALL_FUSION_STRATEGIES = ["concat_project", "cross_attention", "add", "weighted_sum", "gated"]
+    if args.fusion_strategy == "all":
+        strategies_to_run = ALL_FUSION_STRATEGIES
+    elif args.fusion_strategy is not None:
+        strategies_to_run = [args.fusion_strategy]
+    else:
+        strategies_to_run = [fusion_cfg.strategy]
+
     if args.epochs is not None:
         train_cfg.epochs = args.epochs
         lora_cfg.epochs = args.epochs
@@ -340,12 +357,27 @@ def main() -> None:
 
     seed_everything(train_cfg.seed)
 
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    out_path = os.path.join(OUTPUT_DIR, "results.json")
+
+    def save_results(results: dict) -> None:
+        serialisable = {
+            exp: {metric: float(value) for metric, value in metrics.items()}
+            for exp, metrics in results.items()
+        }
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(serialisable, f, indent=2)
+        print(f"  Results saved to {out_path}")
+
     input_types = [1, 2] if args.input_type == 0 else [args.input_type]
     all_results = {}
 
-    if args.task in ("all", "zeroshot"):
-        all_results.update(
-            run_zeroshot(
+    for strategy in strategies_to_run:
+        fusion_cfg.strategy = strategy
+        prefix = f"[{strategy}] "
+
+        if args.task in ("all", "zeroshot"):
+            for k, v in run_zeroshot(
                 data_cfg,
                 clip_cfg,
                 fusion_cfg,
@@ -353,12 +385,11 @@ def main() -> None:
                 input_types,
                 args.use_img_caption,
                 num_workers=train_cfg.num_workers,
-            )
-        )
+            ).items():
+                all_results[prefix + k] = v
 
-    if args.task in ("all", "custom"):
-        all_results.update(
-            run_custom(
+        if args.task in ("all", "custom"):
+            for k, v in run_custom(
                 data_cfg,
                 train_cfg,
                 model_cfg,
@@ -366,12 +397,11 @@ def main() -> None:
                 device,
                 input_types,
                 args.use_img_caption,
-            )
-        )
+            ).items():
+                all_results[prefix + k] = v
 
-    if args.task in ("all", "lora"):
-        all_results.update(
-            run_lora(
+        if args.task in ("all", "lora"):
+            for k, v in run_lora(
                 data_cfg,
                 train_cfg,
                 lora_cfg,
@@ -379,23 +409,15 @@ def main() -> None:
                 device,
                 input_types,
                 args.use_img_caption,
-            )
-        )
+            ).items():
+                all_results[prefix + k] = v
+
+        save_results(all_results)
 
     if not all_results:
         return
 
     print_summary(all_results)
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    out_path = os.path.join(OUTPUT_DIR, "results.json")
-    serialisable = {
-        exp: {metric: float(value) for metric, value in metrics.items()}
-        for exp, metrics in all_results.items()
-    }
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(serialisable, f, indent=2)
-    print(f"Results saved to {out_path}")
-
 
 if __name__ == "__main__":
     main()

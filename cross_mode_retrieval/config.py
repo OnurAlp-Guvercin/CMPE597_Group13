@@ -28,7 +28,7 @@ class DataConfig:
 @dataclass
 class TrainConfig:
     """Shared training hyperparameters."""
-    batch_size: int = 192
+    batch_size: int = 512
     num_workers: int = 12
     learning_rate: float = 1e-4
     weight_decay: float = 1e-4
@@ -38,7 +38,7 @@ class TrainConfig:
     embed_dim: int = 256  # ortak embedding boyutu
     seed: int = 42
     device: str = "cuda"  # CUDA yoksa main.py içinde cpu'ya düşer
-    fp16: bool = False  # mixed precision aç/kapat
+    fp16: bool = True   # mixed precision aç/kapat
 
 
 @dataclass
