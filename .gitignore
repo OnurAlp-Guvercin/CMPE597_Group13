@@ -28,6 +28,9 @@ poetry.lock
 # ── Dataset & media (large files) ─────────────────────────────────────────────
 cross_mode_retrieval/data/images/
 cross_mode_retrieval/data/*.json
+literal_vs_metaphorical/data/images/
+literal_vs_metaphorical/images/
+literal_vs_metaphorical/*.json
 
 # ── Model checkpoints & outputs ───────────────────────────────────────────────
 cross_mode_retrieval/outputs/checkpoints/
