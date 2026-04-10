@@ -38,8 +38,8 @@ poetry.lock
 .DS_Store
 Thumbs.db
 desktop.ini
-.vscode/
-.idea/
+**/.vscode/
+**/.idea/
 *.swp
 *.swo
 
@@ -47,4 +47,4 @@ desktop.ini
 *.log
 *.tmp
 *.bak
-.cache/
+**/.cache/
