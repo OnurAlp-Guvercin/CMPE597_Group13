@@ -1,11 +1,11 @@
 # ── Python ────────────────────────────────────────────────────────────────────
-__pycache__/
+**/__pycache__/
 *.py[cod]
 *.pyo
 *.pyd
 *.so
 *.egg
-*.egg-info/
+**/*.egg-info/
 dist/
 build/
 .eggs/
@@ -22,18 +22,17 @@ Pipfile.lock
 poetry.lock
 
 # ── Jupyter ───────────────────────────────────────────────────────────────────
-.ipynb_checkpoints/
+**/.ipynb_checkpoints/
 *.ipynb
 
 # ── Dataset & media (large files) ─────────────────────────────────────────────
-cross_mode_retrieval/data/images/
-cross_mode_retrieval/data/*.json
-literal_vs_metaphorical/data/images/
-literal_vs_metaphorical/images/
-literal_vs_metaphorical/*.json
+**/images/
+**/*.json
+**/*.csv
 
 # ── Model checkpoints & outputs ───────────────────────────────────────────────
-cross_mode_retrieval/outputs/checkpoints/
+**/outputs/
+**/checkpoints/
 
 # ── OS & editor ───────────────────────────────────────────────────────────────
 .DS_Store
