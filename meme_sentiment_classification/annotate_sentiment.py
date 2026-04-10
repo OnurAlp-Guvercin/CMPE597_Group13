@@ -1,23 +1,3 @@
-"""
-Task 2.3(a) — Sentiment Annotation
-====================================
-Uses a pretrained emotion classifier to assign one of 7 emotion labels
-(anger, disgust, fear, joy, neutral, sadness, surprise) to each meme's
-meme_caption.  Outputs:
-
-  outputs/annotated-trainval.json  — train split with added fields:
-                                      sentiment_label, sentiment_score,
-                                      sentiment_caption_used
-  outputs/annotated-test.json      — test split (same schema)
-
-Also prints:
-  • Class distribution + imbalance statistics for both splits
-  • A random subset of MANUAL_REVIEW_N samples for label-noise inspection
-
-Usage:
-  python annotate_sentiment.py
-"""
-
 import json
 import os
 import random
@@ -31,7 +11,7 @@ from tqdm import tqdm
 import config
 
 
-# ── helpers ──────────────────────────────────────────────────────────────────
+# ------------------------- helpers -------------------------
 
 def load_json(path: str) -> list:
     with open(path, "r", encoding="utf-8") as f:
@@ -54,7 +34,7 @@ def get_meme_caption(item: dict) -> str:
     return ""
 
 
-# ── annotation ───────────────────────────────────────────────────────────────
+# ------------------------- annotation -------------------------
 
 def annotate(items: list, classifier, batch_size: int) -> list:
     """
@@ -87,7 +67,7 @@ def annotate(items: list, classifier, batch_size: int) -> list:
     return annotated
 
 
-# ── reporting ─────────────────────────────────────────────────────────────────
+# ------------------------- reporting -------------------------
 
 def report_distribution(items: list, split_name: str) -> Counter:
     """Print class counts, percentages, ASCII bar chart, and imbalance stats."""
@@ -162,11 +142,12 @@ def print_manual_review(items: list, n: int, seed: int) -> None:
     print(f"{'=' * 60}\n")
 
 
-# ── main ──────────────────────────────────────────────────────────────────────
+# ------------------------- main -------------------------
 
 def main():
     device = 0 if torch.cuda.is_available() else -1
     device_name = f"cuda:{device}" if device >= 0 else "cpu"
+    
     print(f"Sentiment model : {config.SENTIMENT_MODEL}")
     print(f"Device          : {device_name}")
     print(f"Batch size      : {config.SENTIMENT_BATCH_SIZE}")
@@ -188,7 +169,7 @@ def main():
             print(f"\n[WARN] {json_path} not found — run download_data.py first.")
             continue
 
-        print(f"\n─── {split_name} ─────────────────────────────────────")
+        print(f"\n--- {split_name} -------------------------------------------")
         items = load_json(json_path)
         print(f"  Loaded {len(items)} items from {os.path.basename(json_path)}")
 
@@ -196,11 +177,11 @@ def main():
         save_json(annotated, out_path)
         annotated_splits[split_name] = annotated
 
-    # ── Class distribution report ─────────────────────────────────────────────
+    # Class distribution report
     for split_name, annotated in annotated_splits.items():
         report_distribution(annotated, split_name)
 
-    # ── Manual label-noise inspection (train split only) ─────────────────────
+    # Manual label-noise inspection (train split only)
     train_key = "Train (trainval)"
     if train_key in annotated_splits:
         print_manual_review(

@@ -26,22 +26,22 @@ poetry.lock
 *.ipynb
 
 # ── Dataset & media (large files) ─────────────────────────────────────────────
-**/images/
-**/*.json
+**/**/images/
 **/*.csv
 
 # ── Model checkpoints & outputs ───────────────────────────────────────────────
-**/outputs/
 **/checkpoints/
 
 # ── OS & editor ───────────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 desktop.ini
-**/.vscode/
 **/.idea/
 *.swp
 *.swo
+**/.vscode/
+**/CLAUDE.md
+**/.cluade
 
 # ── Misc ──────────────────────────────────────────────────────────────────────
 *.log

@@ -78,10 +78,9 @@ def download_images(json_path: Path, max_workers: int = 8):
 
 def main():
     print("=== MemeCap Data Downloader ===")
-    TRAIN_JSON = "memes-trainval.json"
-    TEST_JSON = "memes-test.json"
+
     download_jsons()
-    for name in [TRAIN_JSON, TEST_JSON]:
+    for name in ["memes-trainval.json", "memes-test.json"]:
         jp = DATA_DIR / name
         if jp.exists():
             download_images(jp)
