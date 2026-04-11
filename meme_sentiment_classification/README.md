@@ -70,3 +70,106 @@ We randomly sampled 50 examples from the training set (seed=42) and inspected wh
 **Estimated mislabel rate from this sample:** roughly 8–12%.
 
 One option to explore before training is dropping samples with `sentiment_score < 0.5`, which would remove the noisiest labels at the cost of losing a small fraction of training data.
+
+---
+
+# Task 2.3(b) — MLP Probes per Modality
+
+## Approach
+
+We extracted frozen CLIP ViT-B/32 embeddings (512-d) for each modality independently and trained two separate MLP classifiers:
+
+- **Image-only probe** — input: CLIP image embedding
+- **Caption-only probe** — input: CLIP meme-caption embedding
+
+Both probes share the same architecture and training setup. Labels come from the annotated JSON produced in 2.3(a). Only samples with valid images are used for a fair comparison (train: 5,161 / test: 504 out of original 5,823 / 559).
+
+---
+
+## Training Details
+
+**Split:** 90% train / 10% validation (of the image-valid subset)  
+**Optimizer:** Adam, early stopping on validation Macro F1 (patience=5)
+
+### Image-only probe
+Stopped at epoch 13 (best checkpoint at epoch 8, Macro F1 = 0.2079). The probe's validation accuracy peaked at ~52% early on but that was a degenerate solution collapsing to `neutral`; Macro F1 kept climbing only slowly, revealing the model struggled to learn minority classes.
+
+### Caption-only probe
+Trained for the full 20 epochs (best at epoch 19, Macro F1 = 0.4196). Convergence was more stable — loss dropped steadily from 1.94 → 1.08, and Macro F1 improved consistently across all classes.
+
+---
+
+## Test Results
+
+### Image-only probe
+
+| Metric       | Value  |
+|--------------|-------:|
+| Accuracy     | 32.54% |
+| Macro F1     | 0.1819 |
+| Weighted F1  | 0.3305 |
+
+Per-class F1:
+
+| Emotion  |    F1 | Support |
+|----------|------:|--------:|
+| anger    | 0.086 |      41 |
+| disgust  | 0.079 |      95 |
+| fear     | 0.151 |      14 |
+| joy      | 0.110 |      34 |
+| neutral  | 0.526 |     263 |
+| sadness  | 0.245 |      42 |
+| surprise | 0.077 |      15 |
+
+### Caption-only probe
+
+| Metric       | Value  |
+|--------------|-------:|
+| Accuracy     | 43.25% |
+| Macro F1     | 0.3860 |
+| Weighted F1  | 0.4490 |
+
+Per-class F1:
+
+| Emotion  |    F1 | Support |
+|----------|------:|--------:|
+| anger    | 0.296 |      41 |
+| disgust  | 0.287 |      95 |
+| fear     | 0.391 |      14 |
+| joy      | 0.514 |      34 |
+| neutral  | 0.547 |     263 |
+| sadness  | 0.375 |      42 |
+| surprise | 0.292 |      15 |
+
+---
+
+## Modality Comparison
+
+| Probe         | Accuracy | Macro F1 | Weighted F1 |
+|---------------|:--------:|:--------:|:-----------:|
+| Image-only    |  32.54%  |  0.1819  |    0.3305   |
+| Caption-only  |  43.25%  |  0.3860  |    0.4490   |
+
+Per-class F1 delta (caption − image):
+
+| Emotion  | Image | Caption |     Δ |
+|----------|------:|--------:|------:|
+| anger    | 0.086 |   0.296 | +0.210 |
+| disgust  | 0.079 |   0.287 | +0.208 |
+| fear     | 0.151 |   0.391 | +0.240 |
+| joy      | 0.110 |   0.514 | +0.405 |
+| neutral  | 0.526 |   0.547 | +0.021 |
+| sadness  | 0.245 |   0.375 | +0.130 |
+| surprise | 0.077 |   0.292 | +0.215 |
+
+---
+
+## Analysis
+
+Caption text carries significantly more sentiment signal than the image alone. The caption probe outperforms the image probe on every single class, with the largest gaps on `joy` (+0.40) and `fear` (+0.24). This is expected: CLIP image embeddings encode visual semantics (objects, scene type) rather than emotional tone, whereas the caption directly expresses the meme poster's intent in language that the emotion annotator also operates on.
+
+The image probe's accuracy (32.54%) barely exceeds the majority-class baseline (~52% for `neutral` on raw accuracy) only because the class distribution in the image-valid subset is slightly different — in practice the image probe's Macro F1 of 0.18 shows it is near-chance for minority classes.
+
+Both probes suffer from the heavy `neutral` dominance identified in 2.3(a). The per-class F1 for `surprise` (0.077 / 0.292) and `disgust` (0.079 / 0.287) remain low even for the caption probe, pointing to label noise and under-representation as the main bottlenecks for 2.3(c).
+
+**Implications for 2.3(c):** A fused model (image + caption) should improve over the caption-only baseline, but the gain from images may be modest. Class-weighted loss or oversampling of minority emotions (`fear`, `surprise`, `joy`) will likely matter more than fusion strategy.

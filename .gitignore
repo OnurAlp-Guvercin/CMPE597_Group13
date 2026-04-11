@@ -40,7 +40,9 @@ desktop.ini
 *.swp
 *.swo
 **/.vscode/
+**/boun_dl/
 **/CLAUDE.md
+**/.claude/
 **/.cluade
 
 # ── Misc ──────────────────────────────────────────────────────────────────────
