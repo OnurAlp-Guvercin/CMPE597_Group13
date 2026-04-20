@@ -25,7 +25,6 @@ def save_json(data: list, path: str) -> None:
 
 
 def get_meme_caption(item: dict) -> str:
-    """Return the first meme_caption string, or '' if absent."""
     caps = item.get("meme_captions", [])
     if isinstance(caps, list):
         return caps[0].strip() if caps else ""
@@ -33,21 +32,17 @@ def get_meme_caption(item: dict) -> str:
         return caps.strip()
     return ""
 
-
 # ------------------------- annotation -------------------------
 
 def annotate(items: list, classifier, batch_size: int) -> list:
     """
     Run the emotion classifier over all items in batches.
     Adds three fields to each item:
-      sentiment_label        — predicted emotion string
-      sentiment_score        — model confidence (0–1)
-      sentiment_caption_used — the meme_caption text that was classified
+      sentiment_label        - predicted emotion string
+      sentiment_score        - model confidence (0–1)
+      sentiment_caption_used - the meme_caption text that was classified
     """
     captions = [get_meme_caption(item) for item in items]
-
-    # Replace empty captions with a neutral placeholder so the model
-    # still produces a (low-confidence) prediction rather than crashing.
     inputs = [c if c else "[no caption]" for c in captions]
 
     results = []
@@ -70,7 +65,18 @@ def annotate(items: list, classifier, batch_size: int) -> list:
 # ------------------------- reporting -------------------------
 
 def report_distribution(items: list, split_name: str) -> Counter:
-    """Print class counts, percentages, ASCII bar chart, and imbalance stats."""
+    """
+    Print class counts, percentages, ASCII bar chart, and imbalance stats.
+    Also computes Shannon entropy as an additional measure of class imbalance.
+
+    Shannon Entropy (H) is calculated as:
+    H = -Σ (p_i * log2(p_i)) for each class i, where p_i is the proportion of samples in class i.
+
+    Shannon entropy measures the uncertainty in the class distribution. 
+    A higher entropy (up to log2(num_classes)) indicates a more balanced distribution, while a lower entropy indicates more imbalance. 
+    This complements the imbalance ratio by accounting for the overall distribution shape, not just the extremes.
+    """
+
     labels = [item["sentiment_label"] for item in items]
     counts = Counter(labels)
     total = len(labels)
@@ -132,6 +138,7 @@ def print_manual_review(items: list, n: int, seed: int) -> None:
         label = item["sentiment_label"]
         score = item["sentiment_score"]
         caption = item["sentiment_caption_used"]
+        
         # Truncate long captions for readability
         display_caption = (caption[:110] + "…") if len(caption) > 110 else caption
         print(f"\n  [{i:02d}]  {label:<10}  (conf {score:.3f})")
