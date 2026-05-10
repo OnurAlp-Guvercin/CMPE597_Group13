@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import json
 import os
 import random
@@ -9,6 +11,7 @@ from transformers import pipeline
 from tqdm import tqdm
 
 import config
+from sanitize_captions import sanitize_caption
 
 
 # ------------------------- helpers -------------------------
@@ -24,39 +27,77 @@ def save_json(data: list, path: str) -> None:
     print(f"  Saved {len(data)} items → {path}")
 
 
-def get_meme_caption(item: dict) -> str:
+def get_meme_captions(item: dict) -> list:
+    """Return all non-empty caption strings for an item."""
     caps = item.get("meme_captions", [])
-    if isinstance(caps, list):
-        return caps[0].strip() if caps else ""
     if isinstance(caps, str):
-        return caps.strip()
-    return ""
+        caps = [caps]
+    return [c.strip() for c in caps if isinstance(c, str) and c.strip()]
 
-# ------------------------- annotation -------------------------
+
+def _majority_vote(labels: list[str], exclude: str = "neutral") -> str:
+    """
+    Filter out `exclude` labels, then return the most common remainder.
+    Falls back to `exclude` if nothing survives (all were excluded or list empty).
+    On a tie, returns the label that appears first in most_common() ordering
+    (i.e. whichever tied label the Counter encountered first).
+    """
+    filtered = [l for l in labels if l != exclude]
+    if not filtered:
+        return exclude
+    return Counter(filtered).most_common(1)[0][0]
+
 
 def annotate(items: list, classifier, batch_size: int) -> list:
     """
-    Run the emotion classifier over all items in batches.
-    Adds three fields to each item:
-      sentiment_label        - predicted emotion string
-      sentiment_score        - model confidence (0–1)
-      sentiment_caption_used - the meme_caption text that was classified
-    """
-    captions = [get_meme_caption(item) for item in items]
-    inputs = [c if c else "[no caption]" for c in captions]
+    Classify every caption for every item, strip neutrals, majority-vote.
 
-    results = []
+    Fields added to each item:
+      sentiment_label          - final predicted emotion string
+      sentiment_score          - mean confidence across captions that voted
+                                 for the winning label (or mean of all if fallback)
+      sentiment_captions_used  - list of captions that were classified
+      sentiment_votes          - {label: count} tally before neutral removal
+    """
+    pairs: list[tuple[int, str]] = []
+    for idx, item in enumerate(items):
+        captions = get_meme_captions(item)
+        if captions:
+            for cap in captions:
+                pairs.append((idx, cap))
+        else:
+            pairs.append((idx, "[no caption]"))
+
+    inputs = [sanitize_caption(cap) for _, cap in pairs]
+
+    raw_results: list[dict] = []
     for i in tqdm(range(0, len(inputs), batch_size), desc="  Classifying"):
         batch = inputs[i : i + batch_size]
-        batch_results = classifier(batch, truncation=True, max_length=512)
-        results.extend(batch_results)
+        raw_results.extend(classifier(batch, truncation=True, max_length=512))
+
+    per_item: dict[int, list[tuple[str, float]]] = {i: [] for i in range(len(items))}
+    for (idx, _), result in zip(pairs, raw_results):
+        per_item[idx].append((result["label"], result["score"]))
 
     annotated = []
-    for item, caption, result in zip(items, captions, results):
+    for idx, item in enumerate(items):
+        predictions = per_item[idx]            # [(label, score), ...]
+        all_labels  = [p[0] for p in predictions]
+        votes = Counter(l for l in all_labels if l != "neutral")
+
+        winner = _majority_vote(all_labels)
+
+        winner_scores = [s for l, s in predictions if l == winner]
+        mean_score = round(sum(winner_scores) / len(winner_scores), 4)
+
         entry = dict(item)
-        entry["sentiment_label"] = result["label"]
-        entry["sentiment_score"] = round(result["score"], 4)
-        entry["sentiment_caption_used"] = caption
+        entry["sentiment_label"]         = winner
+        entry["sentiment_score"]         = mean_score
+        entry["sentiment_captions_used"] = (
+            [sanitize_caption(c) for c in get_meme_captions(item)]
+            or ["[no caption]"]
+        )
+        entry["sentiment_votes"]         = dict(votes)
         annotated.append(entry)
 
     return annotated
@@ -121,11 +162,6 @@ def report_distribution(items: list, split_name: str) -> Counter:
 
 
 def print_manual_review(items: list, n: int, seed: int) -> None:
-    """
-    Print a random subset for manual label-noise inspection.
-    Reviewers should check whether the predicted emotion label makes sense
-    given the meme caption text.
-    """
     rng = random.Random(seed)
     sample = rng.sample(items, min(n, len(items)))
 
@@ -137,17 +173,17 @@ def print_manual_review(items: list, n: int, seed: int) -> None:
     for i, item in enumerate(sample, 1):
         label = item["sentiment_label"]
         score = item["sentiment_score"]
-        caption = item["sentiment_caption_used"]
-        
-        # Truncate long captions for readability
-        display_caption = (caption[:110] + "…") if len(caption) > 110 else caption
-        print(f"\n  [{i:02d}]  {label:<10}  (conf {score:.3f})")
-        print(f"        \"{display_caption}\"")
+        votes = item.get("sentiment_votes", {})
+        captions = item.get("sentiment_captions_used", [])      
+
+        print(f"\n  [{i:02d}]  {label:<10}  (conf {score:.3f})  votes: {votes}")
+        for cap in captions:
+            display = (cap[:110] + "…") if len(cap) > 110 else cap
+            print(f"        \"{display}\"")
 
     print(f"\n{'=' * 60}")
     print("  End of manual review sample.")
     print(f"{'=' * 60}\n")
-
 
 # ------------------------- main -------------------------
 

@@ -34,5 +34,7 @@ DROPOUT = 0.3
 
 if torch.cuda.is_available():
     DEVICE = "cuda"
+elif torch.backends.mps.is_available() and torch.backends.mps.is_built():
+    DEVICE = "mps"
 else:
     DEVICE = "cpu"
