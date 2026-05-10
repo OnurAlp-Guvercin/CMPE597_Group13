@@ -26,7 +26,7 @@ LABEL2IDX: Dict[str, int] = {lbl: i for i, lbl in enumerate(LABELS)}
 NUM_CLASSES = len(LABELS)
 CLIP_DIM = 512          # ViT-B/32 joint embedding dimension
 VAL_RATIO = 0.1
-PATIENCE = 5            # early stopping on val macro-F1
+PATIENCE = 10            # early stopping on val macro-F1
 
 
 # ---------------------------------------------------------------------------

@@ -35,13 +35,14 @@ def get_meme_captions(item: dict) -> list:
     return [c.strip() for c in caps if isinstance(c, str) and c.strip()]
 
 
-def _majority_vote(labels: list[str], exclude: str = "neutral") -> str:
+def _majority_vote(labels: list[str]) -> str:
     """
     Filter out `exclude` labels, then return the most common remainder.
     Falls back to `exclude` if nothing survives (all were excluded or list empty).
     On a tie, returns the label that appears first in most_common() ordering
     (i.e. whichever tied label the Counter encountered first).
     """
+    exclude = "none"
     filtered = [l for l in labels if l != exclude]
     if not filtered:
         return exclude
@@ -83,7 +84,7 @@ def annotate(items: list, classifier, batch_size: int) -> list:
     for idx, item in enumerate(items):
         predictions = per_item[idx]            # [(label, score), ...]
         all_labels  = [p[0] for p in predictions]
-        votes = Counter(l for l in all_labels if l != "neutral")
+        votes = Counter(l for l in all_labels)
 
         winner = _majority_vote(all_labels)
 

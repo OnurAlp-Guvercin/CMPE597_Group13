@@ -3,7 +3,8 @@ import torch
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
-IMAGE_DIR = os.path.join(DATA_DIR, "images")
+# TODO: change before running
+IMAGE_DIR = "/Users/coskunomer/CMPE597_Group13/literal_vs_metaphorical/images"
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, "outputs")
 
 os.makedirs(IMAGE_DIR, exist_ok=True)

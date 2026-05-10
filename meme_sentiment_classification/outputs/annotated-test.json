@@ -105,7 +105,9 @@
       "the simpsons was correct about it's use of trump and greta thurnberg",
       "the simpsons is able to predict so many real life situation including trump and greta thurnburg"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 2
+    }
   },
   {
     "category": "memes",
@@ -217,7 +219,8 @@
     ],
     "sentiment_votes": {
       "sadness": 1,
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -315,14 +318,15 @@
       }
     ],
     "post_id": "f0oq4v",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.9695,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.724,
     "sentiment_captions_used": [
       "the person who wrote the is comparing americans don't believe in free healthcare",
       "americans get angry at free healthcare even in video game form",
       "american's don't like the word free healthcare"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1,
       "sadness": 1
     }
@@ -352,14 +356,15 @@
       }
     ],
     "post_id": "fat6rn",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.754,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5479,
     "sentiment_captions_used": [
       "mad that colleges will pay your way if you are an athlete, but not as much for academics",
       "colleges refuse to lower tuition for anyone unless you play football well then you get it free",
       "the meme poster mocks colleges for its funny fees structures"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -575,15 +580,16 @@
       }
     ],
     "post_id": "gxnnyn",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.7273,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7595,
     "sentiment_captions_used": [
       "mad that netflix/tv shows/movies use adults who are in their 30's to play high school students",
       "meme poster believes the actors that play teenagers on netflix shows look much older than real teenagers do",
       "teenagers portrayed on netflix are men and don't portray a real teenager"
     ],
     "sentiment_votes": {
-      "surprise": 1
+      "surprise": 1,
+      "neutral": 2
     }
   },
   {
@@ -644,8 +650,8 @@
       }
     ],
     "post_id": "gy6y78",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.9415,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5607,
     "sentiment_captions_used": [
       "meme poster warns people of real life dangers of using a toilet in their dream",
       "you can wake up with urine in your bed if you use a toilet in your dream",
@@ -654,7 +660,8 @@
     ],
     "sentiment_votes": {
       "fear": 1,
-      "disgust": 1
+      "disgust": 1,
+      "neutral": 2
     }
   },
   {
@@ -746,7 +753,8 @@
       "amused at kitkat's tone deafness"
     ],
     "sentiment_votes": {
-      "surprise": 2
+      "surprise": 2,
+      "neutral": 1
     }
   },
   {
@@ -820,7 +828,8 @@
     ],
     "sentiment_votes": {
       "anger": 1,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -895,6 +904,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -966,13 +976,14 @@
       }
     ],
     "post_id": "i8tn53",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.6269,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7973,
     "sentiment_captions_used": [
       "elon musk developing brain chips will result in the meme poster being kept awake by ads at 3 am",
       "the meme poster mocks the advertisement issues of elon's idea about choosing the music by the chip inside our brain"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -1001,8 +1012,8 @@
       }
     ],
     "post_id": "it6820",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.5569,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7276,
     "sentiment_captions_used": [
       "they're addicted to reddit",
       "meme poster realizes they want to go back to reddit after logging out",
@@ -1010,6 +1021,7 @@
       "addicted to reddit"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "sadness": 1
     }
   },
@@ -1043,7 +1055,8 @@
       "the meme poster uses twitch so much they notice when he's gone"
     ],
     "sentiment_votes": {
-      "fear": 1
+      "fear": 1,
+      "neutral": 1
     }
   },
   {
@@ -1071,7 +1084,9 @@
       "once halloween is coming back everyone will post skeleton memes",
       "the meme poster says that internet is full of spooktober memes when there is halloween coming"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 2
+    }
   },
   {
     "category": "memes",
@@ -1111,7 +1126,8 @@
       "true soulmates aren't the affectionate ones but the people who share the same dorky interests"
     ],
     "sentiment_votes": {
-      "joy": 1
+      "joy": 1,
+      "neutral": 1
     }
   },
   {
@@ -1154,7 +1170,8 @@
       "while everyone is knowledged about the elements, the meme poster feels proud himself after knowing 4 elements by watching avatar"
     ],
     "sentiment_votes": {
-      "joy": 2
+      "joy": 2,
+      "neutral": 1
     }
   },
   {
@@ -1278,7 +1295,9 @@
       "meme poster likes to see if the actors screwed up a death scene when watching a movie",
       "the meme poster watches carefully whether the died actor is acting properly like a dead body, rather than enjoying the scene"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -1308,14 +1327,15 @@
       }
     ],
     "post_id": "kds715",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.4517,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8486,
     "sentiment_captions_used": [
       "people, especially men and kids, use empty wrapping paper tubes as swords, so anyone that has one, will use it that way and be so loves it",
       "meme poster fondly remembers playing with the empty toilet paper tube when they were a kid",
       "the meme poster imagine himself as the character while holding the paper roll"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "disgust": 1
     }
   },
@@ -1346,13 +1366,14 @@
       }
     ],
     "post_id": "kq9d2b",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.935,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5446,
     "sentiment_captions_used": [
       "the differences between how men and women use filters on snapchat",
       "the guy filter makes a girl look really ugly while the girl filter makes a guy look beautiful"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "disgust": 1
     }
   },
@@ -1398,7 +1419,8 @@
       "wealthy celebrities like the jenners would rather ask for money on gofundme rather than pay for it themselves"
     ],
     "sentiment_votes": {
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -1515,14 +1537,15 @@
       }
     ],
     "post_id": "rqql2k",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.3184,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6022,
     "sentiment_captions_used": [
       "the real super villains of the world are the people who create such inconvenient annoying things like popup ads",
       "people think villains are superhuman but they are the normal people who create pop ups ads",
       "poster thinks creator of pop up ads is an evil genius"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -1612,7 +1635,8 @@
     ],
     "sentiment_votes": {
       "disgust": 1,
-      "surprise": 1
+      "surprise": 1,
+      "neutral": 1
     }
   },
   {
@@ -1639,14 +1663,15 @@
       }
     ],
     "post_id": "s2l9le",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.7858,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.857,
     "sentiment_captions_used": [
       "cartoon shows are not all that different from cartoon movies",
       "the only difference between cartoon characters in movies vs tv is a little shading",
       "the irony of very small changes being made when a cartoon tv show moves to film, in order to appear more sophisticated or higher budget and appropriate for the big screen"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "surprise": 1
     }
   },
@@ -1683,6 +1708,7 @@
     ],
     "sentiment_votes": {
       "joy": 1,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -1715,8 +1741,8 @@
       }
     ],
     "post_id": "swz82l",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.7668,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7256,
     "sentiment_captions_used": [
       "cat and dog owners are very different when it comes to strangers petting their animals",
       "dog owners and cat owners treat their animals differently despite how they look to others",
@@ -1724,6 +1750,7 @@
       "the scarier looking dog can be gentle while the innocent looking cat can be quite violent"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 2
     }
   },
@@ -1759,15 +1786,16 @@
       }
     ],
     "post_id": "txelte",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.6299,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9062,
     "sentiment_captions_used": [
       "they don't like questions that require long answers",
       "meme poster prefers multiple choice tests to essays",
       "when writing short tests they have more time to complete it rather ones that are longer test"
     ],
     "sentiment_votes": {
-      "anger": 1
+      "anger": 1,
+      "neutral": 2
     }
   },
   {
@@ -1804,7 +1832,8 @@
       "netflix is going to an early grave if they add commercials"
     ],
     "sentiment_votes": {
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -1852,6 +1881,7 @@
     ],
     "sentiment_votes": {
       "sadness": 1,
+      "neutral": 1,
       "surprise": 1
     }
   },
@@ -1884,7 +1914,9 @@
       "meme poster's dad is a grown up version of them",
       "his dad knows more about electric wires in the house than the electrical engineering student"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 2
+    }
   },
   {
     "category": "memes",
@@ -1928,7 +1960,8 @@
       "poster thinks climate deniers are not facing reality"
     ],
     "sentiment_votes": {
-      "anger": 2
+      "anger": 2,
+      "neutral": 2
     }
   },
   {
@@ -1966,7 +1999,9 @@
       "the meme poster describes that, britishers are aging too fast",
       "british men ages 18-24 are feminine and then when they turn 25 plus they become bald and fat"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -1991,13 +2026,14 @@
       }
     ],
     "post_id": "xl0aqb",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.3551,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5421,
     "sentiment_captions_used": [
       "they wake up their sleepy dog with love and affection",
       "poster likes to mess with sleeping dog"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "joy": 1
     }
   },
@@ -2084,6 +2120,7 @@
     ],
     "sentiment_votes": {
       "disgust": 1,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -2111,15 +2148,16 @@
       }
     ],
     "post_id": "y3af7s",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.7221,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8167,
     "sentiment_captions_used": [
       "the first thing when the brain cells being brought to life is playing a video game",
       "lab grown brain cells have no knowledge of self but can play pong",
       "poster thinks singular brain cell will only do one function over and over again"
     ],
     "sentiment_votes": {
-      "joy": 1
+      "joy": 1,
+      "neutral": 2
     }
   },
   {
@@ -2157,13 +2195,14 @@
       }
     ],
     "post_id": "y3l6cq",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8544,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8844,
     "sentiment_captions_used": [
       "meme poster wants to correct the thought that reddit users don't use emojis on their posts",
       "the meme poster warns people who hate emojis on the reddit platform"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -2190,13 +2229,14 @@
       }
     ],
     "post_id": "y64w09",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.517,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5435,
     "sentiment_captions_used": [
       "meme poster the obsession of nationality",
       "meme poster thinks being german is essentially like a incurable disease"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "disgust": 1
     }
   },
@@ -2231,13 +2271,14 @@
       }
     ],
     "post_id": "y6e968",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.4657,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9485,
     "sentiment_captions_used": [
       "one thing men and women can agree on is cat memes",
       "you can't make fun of women but if you post about cats women will agree with"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -2274,7 +2315,9 @@
       "microsoft explorer is only used to download chrome anymore",
       "the meme poster exposes that we're literally using the internet explorer only for downloading the chrome browser"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 2
+    }
   },
   {
     "category": "memes",
@@ -2317,6 +2360,7 @@
     ],
     "sentiment_votes": {
       "anger": 1,
+      "neutral": 1,
       "surprise": 1
     }
   },
@@ -2339,13 +2383,14 @@
       }
     ],
     "post_id": "y8vtk9",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.914,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9128,
     "sentiment_captions_used": [
       "meme poster changes their title depending on what social media service they are using",
       "he looks like an idiot on both platforms, a professional idiot on linkedin"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -2377,14 +2422,15 @@
       }
     ],
     "post_id": "y9pvfs",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.916,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6365,
     "sentiment_captions_used": [
       "meme poster wants to debate everyone while normal people don't",
       "meme poster wants to argue with all the other people so much and it freaks them out",
       "the meme poster expresses that he likes to argue with others"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -2420,7 +2466,8 @@
       "their dad actually left because they're a vegan that doesn't drink milk"
     ],
     "sentiment_votes": {
-      "sadness": 2
+      "sadness": 2,
+      "neutral": 1
     }
   },
   {
@@ -2495,7 +2542,8 @@
       "poster enjoys skeleton variation of common memes when it's a spooky season"
     ],
     "sentiment_votes": {
-      "joy": 2
+      "joy": 2,
+      "neutral": 1
     }
   },
   {
@@ -2539,6 +2587,7 @@
     ],
     "sentiment_votes": {
       "sadness": 1,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -2578,7 +2627,8 @@
       "their frustration at people who make common grammatical and spelling errors"
     ],
     "sentiment_votes": {
-      "anger": 2
+      "anger": 2,
+      "neutral": 1
     }
   },
   {
@@ -2605,14 +2655,15 @@
       }
     ],
     "post_id": "ye0oip",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.8014,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7241,
     "sentiment_captions_used": [
       "even total opposite people can become friends with the other",
       "meme poster thinks they are totally unlike their friend but they're still able to enjoy spending time with them and enjoying similar things",
       "two people, even though opposites, can still be friends"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -2649,7 +2700,8 @@
     ],
     "sentiment_votes": {
       "joy": 1,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -2736,6 +2788,7 @@
       "happy because they aren't as impacted as others are by higher fuel prices due to russia's recent military actions because they don't own a car, unlike other people who do"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "joy": 2,
       "sadness": 1
     }
@@ -2772,7 +2825,8 @@
       "poster thinks liechtenstein has friendly military"
     ],
     "sentiment_votes": {
-      "surprise": 2
+      "surprise": 2,
+      "neutral": 1
     }
   },
   {
@@ -2833,14 +2887,15 @@
       }
     ],
     "post_id": "yfo8f0",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8522,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.589,
     "sentiment_captions_used": [
       "poster thinks women stress over men's thoughts too much",
       "the making fun of the well-known fact that women tend think more about how other men think about them, whereas men really don't care how others think about them",
       "poster thinks women think men are more complicated than they really are"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1,
       "surprise": 1
     }
@@ -2886,8 +2941,8 @@
       }
     ],
     "post_id": "yfqlss",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.6055,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7782,
     "sentiment_captions_used": [
       "meme poster understands the call of duty mission sounds bad when you say it out loud but plays well",
       "meme poster knows explaining the no russia cod mission is difficult but will still try",
@@ -2895,7 +2950,8 @@
       "friends of the meme poster who do not play call of duty do not understand the game"
     ],
     "sentiment_votes": {
-      "disgust": 1
+      "disgust": 1,
+      "neutral": 3
     }
   },
   {
@@ -2939,8 +2995,8 @@
       }
     ],
     "post_id": "yfqxgs",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.7487,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7708,
     "sentiment_captions_used": [
       "the meme poster needs sleep more than projects need to get done",
       "meme poster ultimately decides to sleep instead of doing their schoolwork",
@@ -2948,6 +3004,7 @@
       "poster chooses sleep over assignments"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "sadness": 1,
       "joy": 1
     }
@@ -3117,6 +3174,7 @@
     ],
     "sentiment_votes": {
       "joy": 1,
+      "neutral": 1,
       "surprise": 1
     }
   },
@@ -3199,15 +3257,16 @@
       }
     ],
     "post_id": "ygoqx2",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.8105,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7831,
     "sentiment_captions_used": [
       "not interested in the elon's twitter drama",
       "meme poster doesn't care about twitter users arguing over the platform because they don't use it",
       "the meme poster doesn't bother about elon's take over of twitter"
     ],
     "sentiment_votes": {
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 2
     }
   },
   {
@@ -3247,8 +3306,8 @@
       }
     ],
     "post_id": "ygpd49",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.7015,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8019,
     "sentiment_captions_used": [
       "all the major streaming services are equally bad",
       "netflix, hbo, and amazon are all the same and picking one over the others make no sense",
@@ -3257,6 +3316,7 @@
     ],
     "sentiment_votes": {
       "sadness": 1,
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -3294,7 +3354,8 @@
       "meme poster tries to recreate the circumstance of the mandalorian with a pun"
     ],
     "sentiment_votes": {
-      "disgust": 1
+      "disgust": 1,
+      "neutral": 1
     }
   },
   {
@@ -3370,7 +3431,8 @@
       "everyone freaks out when they learn a phrase really does make them sound like an australian"
     ],
     "sentiment_votes": {
-      "surprise": 1
+      "surprise": 1,
+      "neutral": 1
     }
   },
   {
@@ -3393,15 +3455,16 @@
       }
     ],
     "post_id": "yhaglf",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.5858,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6686,
     "sentiment_captions_used": [
       "they think the blunt message in the fortune cookie is funny",
       "fortune cookie has no advice beyond the obvious anymore",
       "poster finds fortune cookie message is true"
     ],
     "sentiment_votes": {
-      "joy": 1
+      "joy": 1,
+      "neutral": 2
     }
   },
   {
@@ -3480,6 +3543,7 @@
       "at 3 am they are recommended some pretty scary youtube videos"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "fear": 2
     }
   },
@@ -3511,15 +3575,16 @@
       }
     ],
     "post_id": "yhni99",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.6487,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.69,
     "sentiment_captions_used": [
       "meme poster feels incredibly powerful looking at all of the halloween candy he has received for free",
       "taking the time to see how much halloween candy they have",
       "during halloween, he takes out all the candy to count them from his chair"
     ],
     "sentiment_votes": {
-      "joy": 1
+      "joy": 1,
+      "neutral": 2
     }
   },
   {
@@ -3637,13 +3702,14 @@
       }
     ],
     "post_id": "yi9z94",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.5514,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.874,
     "sentiment_captions_used": [
       "customers don't want the products of their youth updated for the modern times",
       "poster thinks companies make old content worse when remaking it"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -3680,8 +3746,8 @@
       }
     ],
     "post_id": "yizkxn",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.72,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6317,
     "sentiment_captions_used": [
       "the older you get, the more easily you handle the very difficult things in life",
       "the meme poster over time they have gotten accustomed to life falling apart",
@@ -3689,6 +3755,7 @@
       "the meme poster states that he is used to manage the struggles on life in his 23rd age rather than in his teenage"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "joy": 1
     }
   },
@@ -3716,14 +3783,15 @@
       }
     ],
     "post_id": "yj4g31",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.7419,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5687,
     "sentiment_captions_used": [
       "conveying they are not proud of their genes",
       "meme poster's family members must be laughing at the genes they passed down",
       "the describing the fact that, he/she can't come over with the activities which are gained from their ancestor's gene"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -3796,7 +3864,9 @@
       "poster will never know true meaning of something important",
       "once a person is gone you will never know what they are trying to convey"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 2
+    }
   },
   {
     "category": "memes",
@@ -3823,8 +3893,8 @@
       }
     ],
     "post_id": "yj86bz",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.752,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5657,
     "sentiment_captions_used": [
       "meme poster keeps seeing taylor swift no matter where he goes",
       "meme poster sees taylor swift everywhere and hates it",
@@ -3832,6 +3902,7 @@
       "poster sees swift content frequently on the net"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "anger": 1
     }
   },
@@ -3900,8 +3971,8 @@
       }
     ],
     "post_id": "yjbj2d",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.4052,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7039,
     "sentiment_captions_used": [
       "the meme poster knows the meme they are posting is bad so they post a cute puppy instead",
       "meme poster doesn't know what meme to make for their birthday so they showed a cute dog",
@@ -3909,6 +3980,7 @@
       "poster celebrates birthday with dog pic"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "disgust": 1,
       "joy": 1
     }
@@ -3948,13 +4020,14 @@
       }
     ],
     "post_id": "yjcvg8",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.8643,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8758,
     "sentiment_captions_used": [
       "meme poster will do anything to get upvotes on their halloween memes",
       "willing to post cringe worthy halloween memes during october in order to gain upvotes, even though they feel a little ashamed about doing this"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "sadness": 1
     }
   },
@@ -4026,14 +4099,15 @@
       }
     ],
     "post_id": "yjh7fc",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.7303,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6379,
     "sentiment_captions_used": [
       "europe can conquer countries, but cannot do math",
       "the meme poster mocks europeans for being bad at math but supreme at colonizing",
       "europeans are strong but lack basic math"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -4057,14 +4131,15 @@
       }
     ],
     "post_id": "yjhe9x",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.7542,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5365,
     "sentiment_captions_used": [
       "meme poster doesn't understand why people don't search their questions online, but can't ask because people will likely tell them to search online",
       "the confused that why people don't google their questions rather than asking it on social media like reddit and quora",
       "meme poster agrees that it is frustrating when people ask a question that could be resolved through a google search, but wishes that people would stop replying to questions with this meme rather than an actual response"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "surprise": 1,
       "sadness": 1
     }
@@ -4177,8 +4252,8 @@
       }
     ],
     "post_id": "yjkepd",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.9612,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4735,
     "sentiment_captions_used": [
       "the news reports on frivolous matters",
       "conservative news media knows they are lying about mainstream media trying to cover up things that are widespread",
@@ -4187,6 +4262,7 @@
     ],
     "sentiment_votes": {
       "anger": 1,
+      "neutral": 2,
       "disgust": 1
     }
   },
@@ -4219,8 +4295,8 @@
       }
     ],
     "post_id": "yjld41",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.6042,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8417,
     "sentiment_captions_used": [
       "men don't want one thing and like to have fun",
       "people think men's wants are disgusting but it's fighting for honor like they did in the past",
@@ -4229,7 +4305,8 @@
     ],
     "sentiment_votes": {
       "joy": 1,
-      "disgust": 1
+      "disgust": 1,
+      "neutral": 2
     }
   },
   {
@@ -4264,7 +4341,8 @@
       "the narrator is pretending to be innocent by not like threesomes"
     ],
     "sentiment_votes": {
-      "anger": 2
+      "anger": 2,
+      "neutral": 1
     }
   },
   {
@@ -4323,14 +4401,15 @@
       }
     ],
     "post_id": "ykj20m",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.9558,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5326,
     "sentiment_captions_used": [
       "poster admits that attention can be misunderstood by those that do not often receive it",
       "a humorous but sincere statement about men being starved for emotional intimacy",
       "meme poster thinks men will cling to anyone who shows them affection since very few people do"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -4408,8 +4487,8 @@
       }
     ],
     "post_id": "ykxwyk",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.9169,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.588,
     "sentiment_captions_used": [
       "the best way to fix your problems is to lie to yourself about them",
       "pretty happy ignoring all their problem",
@@ -4417,6 +4496,7 @@
       "poster ignores the problems to make them go away"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "joy": 1
     }
   },
@@ -4526,8 +4606,8 @@
       }
     ],
     "post_id": "ylomgx",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.757,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5228,
     "sentiment_captions_used": [
       "their one nostril gets clogged up every time they try to sleep",
       "meme posters nose only has one good working nostril when they try to sleep at night",
@@ -4535,6 +4615,7 @@
       "they get congested nose when they sleep at night"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "fear": 1,
       "sadness": 1
     }
@@ -4604,14 +4685,15 @@
       }
     ],
     "post_id": "ylt0k7",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.6413,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6936,
     "sentiment_captions_used": [
       "mrbeast doesn't have the most appealing thumbnails",
       "meme poster doesn't like mr beast's youtube thumbnail",
       "meme poster mr beast uses cringe worthy thumbnails and is amused that some people think this isn't the case"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "sadness": 1,
       "joy": 1
     }
@@ -4711,14 +4793,15 @@
       }
     ],
     "post_id": "ym3n1o",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.7489,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6635,
     "sentiment_captions_used": [
       "meme poster thinks the little girl doesn't separate reality from fiction",
       "meme poster's daughter is trying to be calm and relaxing during a stressful medical situation",
       "the meme poster describes his daughter's atrocities in a difficult situation"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "disgust": 1
     }
   },
@@ -4765,7 +4848,9 @@
       "the meme poster taunted excel in high school but their entire job now involves using excel when they are older",
       "meme poster abandoned microsoft excel in school, but need to use it after they get their white collar job"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -4801,7 +4886,8 @@
       "they wouldn't want gordon ramsay walking into their job while they're high"
     ],
     "sentiment_votes": {
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -4877,14 +4963,15 @@
       }
     ],
     "post_id": "ymxbfi",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.3388,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7966,
     "sentiment_captions_used": [
       "meme poster describes the best traits of a tiger as a pet",
       "making a joke about the ridiculous nature of online selling ads, where things often aren't what they seem, in this case the 'free kitty' available is actually a tiger",
       "don't always take things that are free cause it can be different from whats advertised"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "disgust": 1
     }
   },
@@ -4920,14 +5007,15 @@
       }
     ],
     "post_id": "yn6aom",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.5819,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6456,
     "sentiment_captions_used": [
       "meme poster realizes three superheroes have the wrong name and what they should be called instead",
       "meme poster believes batman, daredevil, and ghost rider as misnamed based on their backstories",
       "poster agrees with the new assessment of superhero powers"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -4971,14 +5059,15 @@
       }
     ],
     "post_id": "yndonp",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.3977,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6407,
     "sentiment_captions_used": [
       "meme poster ,ilitary dad's often talk up their toughness in their service but chicken out of doing regular household chores",
       "his dad is at his most confident going to the military but not when the dog poops in his house",
       "strong army dad protectors become helpless when it comes to small messes that need cleaned up"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "sadness": 1
     }
   },
@@ -5018,14 +5107,15 @@
       }
     ],
     "post_id": "ynjt2x",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.5843,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4563,
     "sentiment_captions_used": [
       "making fun of how big his friend's ears are",
       "the person who sits in front of the meme poster in class is so large they can't pay full attention",
       "the meme poster roasts a person who has large ears"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "surprise": 1,
       "joy": 1
     }
@@ -5055,8 +5145,8 @@
       }
     ],
     "post_id": "ynl36y",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.7615,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8511,
     "sentiment_captions_used": [
       "the group he plays with he still plays with now to this day",
       "meme poster and friends playing video games gets less fun over the years",
@@ -5064,6 +5154,7 @@
       "25 years later, his group of friends are still with him to this day to play video games"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1,
       "sadness": 1
     }
@@ -5113,7 +5204,8 @@
     ],
     "sentiment_votes": {
       "anger": 1,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -5149,8 +5241,8 @@
       }
     ],
     "post_id": "ynm613",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.6259,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.639,
     "sentiment_captions_used": [
       "meme poster appreciates their only two followers and one of them is their alternative account",
       "meme poster uses there alternate account to like their memes",
@@ -5158,6 +5250,7 @@
       "while they don't have many followers, they appreciate the people that like his posts"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "sadness": 1,
       "joy": 1
     }
@@ -5191,8 +5284,8 @@
       }
     ],
     "post_id": "ynq7te",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.6493,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7819,
     "sentiment_captions_used": [
       "meme poster lies to random kids they meet on the bus so they don't end up playing phone games with them",
       "meme poster refuses to let kid on the bus with them play their phone games",
@@ -5200,6 +5293,7 @@
       "they would rather lie about having games on their phone so the kid on the bus doesn't play on his phone"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 2
     }
   },
@@ -5286,7 +5380,8 @@
     ],
     "sentiment_votes": {
       "sadness": 1,
-      "disgust": 1
+      "disgust": 1,
+      "neutral": 1
     }
   },
   {
@@ -5395,6 +5490,7 @@
     ],
     "sentiment_votes": {
       "anger": 1,
+      "neutral": 1,
       "disgust": 2
     }
   },
@@ -5438,7 +5534,8 @@
       "the meme poster reacts to funny posts more on other platforms than on reddit"
     ],
     "sentiment_votes": {
-      "joy": 2
+      "joy": 2,
+      "neutral": 1
     }
   },
   {
@@ -5522,6 +5619,7 @@
       "poster finds clever word play amusing"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "joy": 2
     }
   },
@@ -5577,14 +5675,15 @@
       }
     ],
     "post_id": "yo5a0c",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.5917,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8255,
     "sentiment_captions_used": [
       "meme poster wants to know why midnight's edge has such a limited view of animation",
       "poster thinks video game companies exploit children for money",
       "cartoons are made for kids and to make money only"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -5687,7 +5786,8 @@
       "meme poster's dog thinks meme poster moving his leg that meme poster standing up are the same thing"
     ],
     "sentiment_votes": {
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -5729,7 +5829,8 @@
     ],
     "sentiment_votes": {
       "joy": 2,
-      "fear": 1
+      "fear": 1,
+      "neutral": 1
     }
   },
   {
@@ -5760,14 +5861,15 @@
       }
     ],
     "post_id": "yoat1h",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.428,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6681,
     "sentiment_captions_used": [
       "their computer lie about their battery power so keep vigilant",
       "always charge your chromebook because they lie about how much battery life will last",
       "chromebooks may say something but won't follow through because they die faster than expected"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -5852,7 +5954,8 @@
     ],
     "sentiment_votes": {
       "disgust": 2,
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -5903,7 +6006,8 @@
       "in reality when you are given powers you will abuse it and not responsible like how everyone thinks you will do"
     ],
     "sentiment_votes": {
-      "anger": 2
+      "anger": 2,
+      "neutral": 1
     }
   },
   {
@@ -5970,14 +6074,15 @@
       }
     ],
     "post_id": "yokh2n",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.4894,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7143,
     "sentiment_captions_used": [
       "meme poster thinks they will conquer germany by using a online language app",
       "the preparing to rule germany and making the preparations by learning the german language",
       "they are learning on duolingo for 14 days straight learning the german language"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -6062,6 +6167,7 @@
     ],
     "sentiment_votes": {
       "disgust": 1,
+      "neutral": 1,
       "surprise": 1
     }
   },
@@ -6101,6 +6207,7 @@
       "meme poster exposes the happiness behind smiling at someone's window"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "joy": 2
     }
   },
@@ -6147,7 +6254,9 @@
       "meme poster will always check a notification on a discord server they don't post in but will immediately leave after checking it",
       "he doesn't necessarily talk in the server, but looks in it to get rid of the notification"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -6181,6 +6290,7 @@
       "they dislike twitter and want it to fail"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 2
     }
   },
@@ -6264,6 +6374,7 @@
       "hates musk's new twitter fee for blue check marks"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 2,
       "sadness": 1
     }
@@ -6370,7 +6481,8 @@
       "poster thinks dad is a milk drinking invisible man"
     ],
     "sentiment_votes": {
-      "sadness": 2
+      "sadness": 2,
+      "neutral": 2
     }
   },
   {
@@ -6401,6 +6513,7 @@
       "making a play on words, the sound producer is represented by a dog so when the vocals being mixed sound rough and not very good he says they are 'ruff' - like a dog's bark"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "disgust": 2
     }
   },
@@ -6453,6 +6566,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -6488,15 +6602,16 @@
       }
     ],
     "post_id": "you9j5",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8956,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7277,
     "sentiment_captions_used": [
       "if you are trying to help a hot girl, her step brother will beat you to it",
       "stepbrothers always run to help their hot stepsisters in crisis",
       "meme poster when they are trying to help a cute girl, the girl's brother shows up to save her day"
     ],
     "sentiment_votes": {
-      "anger": 1
+      "anger": 1,
+      "neutral": 2
     }
   },
   {
@@ -6627,7 +6742,9 @@
       "the meme poster exposes that the modern game devs are occupying more spaces",
       "poster thinks older games were more economical about their software"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 4
+    }
   },
   {
     "category": "memes",
@@ -6692,8 +6809,8 @@
       }
     ],
     "post_id": "yozg00",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.6971,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5368,
     "sentiment_captions_used": [
       "false thing should happen in different ways",
       "meme poster wants to scam online by faking a dog as a deer",
@@ -6701,6 +6818,7 @@
       "you can't always trust what you buy on the internet"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "anger": 1
     }
   },
@@ -6945,15 +7063,16 @@
       }
     ],
     "post_id": "yp2359",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.7764,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5614,
     "sentiment_captions_used": [
       "they are excited because he can be his friend's girlfriend",
       "talking themselves into marrying their best friend despite not being gay",
       "meme poster considers changing genders to acquire relationship"
     ],
     "sentiment_votes": {
-      "joy": 1
+      "joy": 1,
+      "neutral": 2
     }
   },
   {
@@ -6986,7 +7105,8 @@
       "there are a lot of people in demand making the same christmas memes"
     ],
     "sentiment_votes": {
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -7010,8 +7130,8 @@
       }
     ],
     "post_id": "yp6joz",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.7214,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.615,
     "sentiment_captions_used": [
       "how old they feel through a video game image",
       "meme poster wants to know if other remember minecraft memes of the past",
@@ -7019,6 +7139,7 @@
       "it has been a long time since minecraft looked like the image and is making a joke about their own age and length of time playing the game"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "sadness": 1
     }
   },
@@ -7047,8 +7168,8 @@
       }
     ],
     "post_id": "yp78rs",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.4505,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4788,
     "sentiment_captions_used": [
       "elon musk would be targeted now as as zuckerberg because he now owns a social media that can influence people",
       "meme poster thinks mark zuckerberg has had online criticism so much he takes it calmly when compared to elon musk",
@@ -7056,6 +7177,7 @@
       "meme poster thinks zuckerberg can give musk advise about being a nefarious billionaire"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1,
       "anger": 1
     }
@@ -7110,7 +7232,8 @@
       "listening to a song while you're bummed out meant that you could decipher the song"
     ],
     "sentiment_votes": {
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -7187,8 +7310,8 @@
       }
     ],
     "post_id": "yp8i9b",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.6318,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6737,
     "sentiment_captions_used": [
       "conveying they are cool because they write books",
       "meme poster thinks authors who start the book on page 1 instead of pages of filler are cool",
@@ -7196,7 +7319,8 @@
       "authors who start the story right away are the meme poster's favorite"
     ],
     "sentiment_votes": {
-      "joy": 1
+      "joy": 1,
+      "neutral": 3
     }
   },
   {
@@ -7287,6 +7411,7 @@
     "sentiment_votes": {
       "joy": 1,
       "fear": 1,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -7367,7 +7492,8 @@
     ],
     "sentiment_votes": {
       "surprise": 2,
-      "disgust": 1
+      "disgust": 1,
+      "neutral": 1
     }
   },
   {
@@ -7410,6 +7536,7 @@
     "sentiment_votes": {
       "surprise": 1,
       "joy": 1,
+      "neutral": 1,
       "fear": 1
     }
   },
@@ -7486,13 +7613,14 @@
       }
     ],
     "post_id": "ypiytx",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.8962,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5461,
     "sentiment_captions_used": [
       "meme poster thinks esposito meme is highly versatile",
       "meme poster mocks the people who are too cringe while changing their names"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "fear": 1
     }
   },
@@ -7537,7 +7665,8 @@
     ],
     "sentiment_votes": {
       "joy": 1,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -7574,6 +7703,7 @@
       "cleaning while listening to music makes cleaning fun, while cleaning without music makes you bummed out"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "joy": 2,
       "sadness": 1
     }
@@ -7648,14 +7778,15 @@
       }
     ],
     "post_id": "ypltgu",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.5052,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4834,
     "sentiment_captions_used": [
       "still in the process of recovering from the first hurricane when he got news of the next one coming",
       "the meme poster was too tired after frequently get attacked by hurricanes",
       "tired of hurricane season"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "fear": 1,
       "sadness": 1
     }
@@ -7781,8 +7912,8 @@
       }
     ],
     "post_id": "ypmkrl",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.594,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7124,
     "sentiment_captions_used": [
       "tiktok copied vine",
       "meme poster misses vine when others say how great tiktok was",
@@ -7790,6 +7921,7 @@
       "vine was superior to tiktok in every way"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "sadness": 1
     }
   },
@@ -7833,14 +7965,15 @@
       }
     ],
     "post_id": "ypo3im",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.9643,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8799,
     "sentiment_captions_used": [
       "meme poster knows all the stereotypes about italians are true in the memes",
       "the meme poster enjoys the meme when it is about the italians",
       "meme poster thinks italian memes are rather accurate"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -7876,14 +8009,15 @@
       }
     ],
     "post_id": "yppqtz",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.8025,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4887,
     "sentiment_captions_used": [
       "society doesn't believe men have feelings but they do",
       "meme poster exposes that society can't believe that men don't have feelings",
       "their frustration regarding the commonly held view that men should not have feelings"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "surprise": 1,
       "anger": 1
     }
@@ -7923,7 +8057,9 @@
       "the meme poster says that this template is ruling the internet now",
       "the meme on the bottom panel is a meme that he sees all the time"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -7955,7 +8091,8 @@
       "meme poster reminisces about a childhood game they enjoyed playing at mcdonald's, competing against other players, and feels sad it's no longer around"
     ],
     "sentiment_votes": {
-      "sadness": 2
+      "sadness": 2,
+      "neutral": 2
     }
   },
   {
@@ -7989,13 +8126,14 @@
       }
     ],
     "post_id": "ypraz9",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8705,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6145,
     "sentiment_captions_used": [
       "eye doctors expect you to see the difference between identical pictures of the apple",
       "the meme poster mocks the stupid test"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -8041,7 +8179,8 @@
       "meme poster admits those not familiar with english will take some sayings literally"
     ],
     "sentiment_votes": {
-      "fear": 1
+      "fear": 1,
+      "neutral": 1
     }
   },
   {
@@ -8084,14 +8223,15 @@
       }
     ],
     "post_id": "yprfz2",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.3552,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4333,
     "sentiment_captions_used": [
       "they aren't loves getting banned from a discord server",
       "the meme poster wants to express how confused he is when genuine opinions are banned on blogs by admins",
       "meme poster gets annoyed when the man got reply from the admin"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "sadness": 1,
       "anger": 1
     }
@@ -8134,7 +8274,8 @@
       "criminals are expensive to society"
     ],
     "sentiment_votes": {
-      "anger": 3
+      "anger": 3,
+      "neutral": 1
     }
   },
   {
@@ -8215,7 +8356,9 @@
       "meme poster says that he doesn't want to say about the post but the post forces him to say",
       "meme poster demonstrates his ability to let the meme speak for him"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 4
+    }
   },
   {
     "category": "memes",
@@ -8280,14 +8423,15 @@
       }
     ],
     "post_id": "ypt7wg",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.8378,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7524,
     "sentiment_captions_used": [
       "people have a lot of time on their hands and don't do anything productive with it",
       "the meme poster mocks the \"cheetos\" advertisement and its funny promotion",
       "they brought up a good idea from an article that showed a coffin preserving cheetos"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -8324,6 +8468,7 @@
     ],
     "sentiment_votes": {
       "sadness": 1,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -8389,14 +8534,15 @@
       }
     ],
     "post_id": "ypuy9q",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.9383,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7395,
     "sentiment_captions_used": [
       "don't really want to use their social media platform to encourage people to vote, they'd rather us it to meet girls",
       "meme poster tries to encourage others to vote through memes",
       "the meme poster exposes the wrong usage of social media"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -8469,14 +8615,15 @@
       }
     ],
     "post_id": "yrt7wo",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.5245,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6459,
     "sentiment_captions_used": [
       "the bmw riding his tail should have gone around him the whole time instead of tailing him",
       "the indignance of a car passing them after a long time of tailgating",
       "a bmw driver was tailgating the meme poster for no reason and finally decided to pass them"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "disgust": 1,
       "anger": 1
     }
@@ -8506,8 +8653,8 @@
       }
     ],
     "post_id": "yrtnej",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.9152,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6873,
     "sentiment_captions_used": [
       "the meme poster posts different memes and does not reuse them arbitrarily",
       "meme poster doesn't care they are posting the same meme as everyone else",
@@ -8515,6 +8662,7 @@
       "proud that he does not reuse overexposed memes on reddit"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 2
     }
   },
@@ -8641,7 +8789,8 @@
     ],
     "sentiment_votes": {
       "sadness": 1,
-      "anger": 2
+      "anger": 2,
+      "neutral": 1
     }
   },
   {
@@ -8685,7 +8834,8 @@
     ],
     "sentiment_votes": {
       "anger": 1,
-      "joy": 1
+      "joy": 1,
+      "neutral": 1
     }
   },
   {
@@ -8758,6 +8908,7 @@
       "they are tired of hearing the same joke over and over again to the point they want to slap the person telling the joke"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "sadness": 1,
       "anger": 2
     }
@@ -8786,14 +8937,15 @@
       }
     ],
     "post_id": "ys2ioi",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.9497,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8182,
     "sentiment_captions_used": [
       "meme poster has to select where they want to pee but society makes it so it can only be the toilet",
       "trying to decide to pee in a toilet or be gross and lazy",
       "sometimes they can't decide where to go to the bathroom"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "disgust": 1
     }
   },
@@ -8822,8 +8974,8 @@
       }
     ],
     "post_id": "ys68mi",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.929,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7459,
     "sentiment_captions_used": [
       "meme poster thinks elon musk would choose drawing 25 uno cards instead of staying on the planet",
       "meme poster thinks elon musk would take the opportunity to leave the planet if given the choice",
@@ -8831,6 +8983,7 @@
       "meme poster thinks musk will eventually move to outer space"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "anger": 1
     }
   },
@@ -8872,7 +9025,8 @@
       "the and at the people who hates gay"
     ],
     "sentiment_votes": {
-      "anger": 2
+      "anger": 2,
+      "neutral": 2
     }
   },
   {
@@ -8911,7 +9065,8 @@
       "this is the expression they make after cancelling plans due to rain but it stops right after"
     ],
     "sentiment_votes": {
-      "sadness": 2
+      "sadness": 2,
+      "neutral": 1
     }
   },
   {
@@ -8946,14 +9101,15 @@
       }
     ],
     "post_id": "ys8lta",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8376,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6984,
     "sentiment_captions_used": [
       "meme poster thinks the black phone is checking out a portion of caroline to copy it",
       "meme poster thinks the black phone is a copy of the ghost part of caroline",
       "meme poster mocks black phone for its copy"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -9026,8 +9182,8 @@
       }
     ],
     "post_id": "ysg8hr",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.9802,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7024,
     "sentiment_captions_used": [
       "conveying a random guy built a folding iphone years before apple made it a thing",
       "meme poster apple is going to threaten the maker of the foldable iphone",
@@ -9035,6 +9191,7 @@
       "amused by iphone owner attempting to make a folding phone out of iphone"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "fear": 1,
       "sadness": 1,
       "surprise": 1
@@ -9110,6 +9267,7 @@
     ],
     "sentiment_votes": {
       "joy": 1,
+      "neutral": 1,
       "sadness": 1
     }
   },
@@ -9188,6 +9346,7 @@
     ],
     "sentiment_votes": {
       "fear": 1,
+      "neutral": 1,
       "sadness": 1
     }
   },
@@ -9241,7 +9400,8 @@
       "meme poster thinks his flag would be sad"
     ],
     "sentiment_votes": {
-      "sadness": 2
+      "sadness": 2,
+      "neutral": 2
     }
   },
   {
@@ -9277,7 +9437,8 @@
     ],
     "sentiment_votes": {
       "fear": 1,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -9323,6 +9484,7 @@
     ],
     "sentiment_votes": {
       "surprise": 2,
+      "neutral": 1,
       "joy": 1
     }
   },
@@ -9363,6 +9525,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -9456,6 +9619,7 @@
     ],
     "sentiment_votes": {
       "disgust": 2,
+      "neutral": 1,
       "sadness": 1
     }
   },
@@ -9484,8 +9648,8 @@
       }
     ],
     "post_id": "ysnmo7",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.5983,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.3341,
     "sentiment_captions_used": [
       "starbucks comes out with something weirder every year",
       "the growing ridiculousness of starbucks's seasonal specialties",
@@ -9493,6 +9657,7 @@
       "meme poster thinks starbucks will sell strange items in the future"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1,
       "disgust": 1,
       "surprise": 1
@@ -9541,7 +9706,9 @@
       "the true definition of asmr as opposed to a misconception",
       "meme poster wants to set the truth about what asmr is"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -9580,6 +9747,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 1,
       "joy": 1
     }
   },
@@ -9716,8 +9884,8 @@
       }
     ],
     "post_id": "ysr39a",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.7478,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7058,
     "sentiment_captions_used": [
       "some conspiracy theorists think australia doesn't exist so a man from australia mocks how ridiculous that is",
       "australian wonders how conspiracy theorists debate whether it exists",
@@ -9726,7 +9894,8 @@
     ],
     "sentiment_votes": {
       "anger": 1,
-      "surprise": 1
+      "surprise": 1,
+      "neutral": 2
     }
   },
   {
@@ -9829,14 +9998,15 @@
       }
     ],
     "post_id": "ysw9z4",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.8903,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7643,
     "sentiment_captions_used": [
       "meme poster believes the pictures of bush and putin celebrating a failed war are the same",
       "meme poster can't see the difference between putin and bush declaring their wars over early",
       "the meme poster mocks george bush by comparing him with putin"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "surprise": 1,
       "anger": 1
     }
@@ -9919,8 +10089,8 @@
       }
     ],
     "post_id": "yswxgz",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.8222,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6224,
     "sentiment_captions_used": [
       "not everyone is proud what of music they listen too",
       "meme poster's friends try to make them decide between liking rap and rock when he likes both",
@@ -9928,6 +10098,7 @@
       "meme poster tells people they like rock and rap music best, but secretly they actually really enjoy the sonic adventure theme music and it is their guilty pleasure"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 2
     }
   },
@@ -9969,7 +10140,8 @@
       "the meme poster mocks the doge community for making artificial traffic"
     ],
     "sentiment_votes": {
-      "anger": 3
+      "anger": 3,
+      "neutral": 1
     }
   },
   {
@@ -10015,6 +10187,7 @@
     ],
     "sentiment_votes": {
       "disgust": 2,
+      "neutral": 1,
       "fear": 1
     }
   },
@@ -10078,15 +10251,16 @@
       }
     ],
     "post_id": "yszx5e",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.5306,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5475,
     "sentiment_captions_used": [
       "the technology that sounds great in theory but is almost useless when it's being used",
       "the new electric floor tech sounds like it's going to break down a lot like previous iterations",
       "the floor tiles being made of electricity meant the floor lights up like solar roadways"
     ],
     "sentiment_votes": {
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 2
     }
   },
   {
@@ -10118,8 +10292,8 @@
       }
     ],
     "post_id": "yt2eog",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.4044,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7605,
     "sentiment_captions_used": [
       "meme poster thinks weird reddit users are anxiously waiting for a meme like how do you die",
       "reddit users with interesting names are eagerly anticipating if they will die as their name implies",
@@ -10127,7 +10301,8 @@
       "redditors that have weird names got it made, they can make a witty remark whenever that meme happens"
     ],
     "sentiment_votes": {
-      "fear": 1
+      "fear": 1,
+      "neutral": 3
     }
   },
   {
@@ -10158,14 +10333,15 @@
       }
     ],
     "post_id": "yt5hq0",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.486,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6405,
     "sentiment_captions_used": [
       "meme poster thinks artists augment their work by adding audio",
       "meme poster thinks artists clapping their sounds is self congratulation",
       "the meme poster mocks artists for using clapping sounds and appreciating themselves at the end their content"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "joy": 1,
       "anger": 1
     }
@@ -10250,7 +10426,9 @@
       "the meme poster describes that, though he have lot of words in his mind, he uses very few of his talent while writing an essay",
       "while writing his essay that is 500 pages long, he likes to write out tacked on sentences like \"it is not\" instead of \"it's\""
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 2
+    }
   },
   {
     "category": "memes",
@@ -10341,7 +10519,8 @@
       "meme poster thinks people need to stop trying to spoil the new pokemon coming out for the people who don't want to know"
     ],
     "sentiment_votes": {
-      "sadness": 2
+      "sadness": 2,
+      "neutral": 1
     }
   },
   {
@@ -10373,7 +10552,8 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
-      "joy": 1
+      "joy": 1,
+      "neutral": 1
     }
   },
   {
@@ -10396,14 +10576,15 @@
       }
     ],
     "post_id": "ytcg2z",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.829,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7383,
     "sentiment_captions_used": [
       "eminem is not being himself",
       "meme poster thinks jesse from breaking bad is the newer version of eminem",
       "the bullying eminem for his appearance"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -10435,14 +10616,15 @@
       }
     ],
     "post_id": "ytcm7v",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8663,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5208,
     "sentiment_captions_used": [
       "tortilla companies got so rich off of tacos and burritos",
       "the meme poster exposes the sales of tortilla is high after selling tacos and burritos",
       "the capitalistic joy provoked in tortilla making companies when they see the wide range of uses their product has"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -10466,14 +10648,15 @@
       }
     ],
     "post_id": "ytczsg",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.4296,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8791,
     "sentiment_captions_used": [
       "meme poster explains among us to their dad by explaining the similarities between sus and gus",
       "meme poster thinks dad has dark opinions about show",
       "dad thinks his kid asks a loaded question with a complex and dangerous answer"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "sadness": 1,
       "anger": 1
     }
@@ -10512,7 +10695,8 @@
       "elon musk talks to the mirror asking who is responsible for twitter being bad"
     ],
     "sentiment_votes": {
-      "sadness": 2
+      "sadness": 2,
+      "neutral": 2
     }
   },
   {
@@ -10539,14 +10723,15 @@
       }
     ],
     "post_id": "ytgo5t",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.866,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7184,
     "sentiment_captions_used": [
       "elon musk over promised on being able to develop a self driving car",
       "elon musk made the teslas with intention to make people hate themselves",
       "elon musk is all about himself"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -10585,7 +10770,8 @@
     ],
     "sentiment_votes": {
       "sadness": 1,
-      "anger": 2
+      "anger": 2,
+      "neutral": 1
     }
   },
   {
@@ -10621,6 +10807,7 @@
     ],
     "sentiment_votes": {
       "fear": 1,
+      "neutral": 1,
       "sadness": 1
     }
   },
@@ -10667,7 +10854,8 @@
     ],
     "sentiment_votes": {
       "anger": 2,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -10702,14 +10890,15 @@
       }
     ],
     "post_id": "yu0t86",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.811,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6332,
     "sentiment_captions_used": [
       "meme poster tries to convince flat earthers the world is round with reason",
       "the meme poster mocks the people who think our earth is flat",
       "face timing them meant that the earth isn't as flat as the flat earthers think"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -10776,14 +10965,15 @@
       }
     ],
     "post_id": "yu4kic",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.7845,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7448,
     "sentiment_captions_used": [
       "the meme poster describes the dogs wait around to scoop up all the food on the ground",
       "the meme poster imitates his dog's urge to have the food, which is on the floor",
       "meme poster has dog that eats off the floor"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "disgust": 1
     }
   },
@@ -10857,7 +11047,9 @@
       "the meme poster praises toothpaste for using it for other ways rather than brushing the teeth",
       "meme poster buys toothpaste for non traditional use"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 4
+    }
   },
   {
     "category": "memes",
@@ -10925,14 +11117,15 @@
       }
     ],
     "post_id": "yub23t",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.6341,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.686,
     "sentiment_captions_used": [
       "the meme they had in their folder has a format they don't remember and the meme creators want to know the source badly",
       "trying out a meme format they don't totally understand despite criticism from other users who used the meme previously",
       "meme poster states the urge of people who asks a template to the meme poster, where the meme poster can't address where the template he took from"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -10995,14 +11188,15 @@
       }
     ],
     "post_id": "yufa3r",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.3503,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4584,
     "sentiment_captions_used": [
       "the their friends show up to school wearing the same costume for halloween",
       "going to school wearing a batman costume meant finding other kids doing the same thing",
       "they hate it when someone wears costume as them during halloween in school"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "surprise": 1,
       "anger": 1
     }
@@ -11051,14 +11245,15 @@
       }
     ],
     "post_id": "yuhrkr",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.921,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7071,
     "sentiment_captions_used": [
       "employers want to only hire people with lots of experience but applicants are so young to get that experience they need",
       "the meme poster roasts the employer's attitude",
       "meme poster thinks employer requirements are unreasonable"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -11096,6 +11291,7 @@
       "god makes pretty good inventions but in the case of water, he starts adding salt to it"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 2,
       "disgust": 1
     }
@@ -11214,15 +11410,16 @@
       }
     ],
     "post_id": "yva6ft",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.4449,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5432,
     "sentiment_captions_used": [
       "they don't like movie theater or microwave popcorn",
       "meme poster believes there is a alternate popcorn choice in the movies",
       "meme poster says that he likes other popcorn than movie and microwave popcorns"
     ],
     "sentiment_votes": {
-      "disgust": 1
+      "disgust": 1,
+      "neutral": 2
     }
   },
   {
@@ -11254,8 +11451,8 @@
       }
     ],
     "post_id": "yvami9",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.4171,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5738,
     "sentiment_captions_used": [
       "meme poster thinks a motorcycle cop during a high speed chase can pop up randomly",
       "meme poster thinks motorcycles cops always pop up out of nowhere on chases",
@@ -11263,6 +11460,7 @@
       "motorcycle cops are useless when it comes to police chases"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "surprise": 1,
       "anger": 1
     }
@@ -11306,7 +11504,8 @@
     ],
     "sentiment_votes": {
       "joy": 2,
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -11356,13 +11555,14 @@
       }
     ],
     "post_id": "yve3an",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.7527,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6957,
     "sentiment_captions_used": [
       "meme poster believes yawning is you manually turning off the sound cancellation since you have to hear it",
       "meme poster finds yawning fact interesting"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "joy": 1
     }
   },
@@ -11427,8 +11627,8 @@
       }
     ],
     "post_id": "yvfqac",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.9196,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.718,
     "sentiment_captions_used": [
       "the law wants you to thank them for making traffic laws make sense",
       "meme poster traffic laws are too pleased about being common sense",
@@ -11436,6 +11636,7 @@
       "meme poster muses that road rules are made by government"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1,
       "anger": 1
     }
@@ -11461,8 +11662,8 @@
       }
     ],
     "post_id": "yvg4xx",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.4756,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6345,
     "sentiment_captions_used": [
       "meme poster's dad wants a huge screwdriver to screw in the giant screw",
       "meme poster wants to show off exactly how tall the screw is and how big the screwdriver would be to use it",
@@ -11470,6 +11671,7 @@
       "meme poster thinks dad wants a bigger tool"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "surprise": 1
     }
   },
@@ -11498,8 +11700,8 @@
       }
     ],
     "post_id": "yvh154",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.8304,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6106,
     "sentiment_captions_used": [
       "meme poster thinks british people decide to build an empire after everyone else had their turn",
       "british people got tired of being invaded and decided to make a empire after 1600",
@@ -11507,6 +11709,7 @@
       "interested in british empire's success during 16th century"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "joy": 1
     }
   },
@@ -11586,8 +11789,8 @@
       }
     ],
     "post_id": "yvnr3b",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.3899,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7006,
     "sentiment_captions_used": [
       "twitter and reddit are capable of stealing from one another and they both know this",
       "the exchange of memes and art between reddit and twitter",
@@ -11595,6 +11798,7 @@
       "meme poster says that twitter and reddit both are copying content from each other"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "joy": 1
     }
   },
@@ -11634,6 +11838,7 @@
     "sentiment_votes": {
       "joy": 1,
       "surprise": 1,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -11672,7 +11877,8 @@
     ],
     "sentiment_votes": {
       "anger": 2,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -11769,7 +11975,8 @@
     "sentiment_votes": {
       "sadness": 1,
       "disgust": 1,
-      "joy": 1
+      "joy": 1,
+      "neutral": 1
     }
   },
   {
@@ -11849,15 +12056,16 @@
       }
     ],
     "post_id": "yvxyyi",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.9602,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.3798,
     "sentiment_captions_used": [
       "the meme poster thinks he is indecisive in making up his mind trying to do something that could change his fate",
       "reddit users encourage meme posters to post memes they know are wrong",
       "torn between two choices"
     ],
     "sentiment_votes": {
-      "fear": 1
+      "fear": 1,
+      "neutral": 2
     }
   },
   {
@@ -11918,6 +12126,7 @@
       "when they had problems back in 2016, a random person was their angel when they needed help online"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "surprise": 2,
       "joy": 1
     }
@@ -11946,14 +12155,15 @@
       }
     ],
     "post_id": "yw16mt",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.3568,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9213,
     "sentiment_captions_used": [
       "this meme is using the reference of the caricature or parody of famous cartoon spongebob to explain the person speaking to operator affect of placing phone down",
       "meme poster thinks 911 operators really love when they know something bad happened on a call",
       "the operator said to make sure the friend is still alive but the caller shot him"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "joy": 1,
       "sadness": 1
     }
@@ -12029,13 +12239,14 @@
       }
     ],
     "post_id": "yw3pc8",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.82,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4933,
     "sentiment_captions_used": [
       "how the meme poster feels the first vs the last day of their job",
       "on their first day of work they were excited and top of the world and now that are working for a while their bloodied and defeated"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "sadness": 1
     }
   },
@@ -12072,6 +12283,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 1,
       "joy": 1
     }
   },
@@ -12164,6 +12376,7 @@
     ],
     "sentiment_votes": {
       "anger": 1,
+      "neutral": 1,
       "sadness": 1,
       "surprise": 1
     }
@@ -12233,14 +12446,15 @@
       }
     ],
     "post_id": "yw9w7m",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.7439,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9194,
     "sentiment_captions_used": [
       "meme poster tries to find the good parts of having a life of memes",
       "meme poster isn't bothered by the real world but hates this meme format",
       "the meme poster realizes the trauma of his life and the reason behind it"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1,
       "sadness": 1
     }
@@ -12282,8 +12496,8 @@
       }
     ],
     "post_id": "ywd8d5",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.7981,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5265,
     "sentiment_captions_used": [
       "no matter what personal problems a person is going through, a unhelpful person will always recommend to go to the gym as a cure",
       "meme poster gets upset when people tell them that going to the gym will solve all of their problems",
@@ -12291,6 +12505,7 @@
       "meme poster thinks people who don't understand depression give bad solutions"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "sadness": 1
     }
   },
@@ -12332,7 +12547,8 @@
       "meme poster runs out of time to receive advice"
     ],
     "sentiment_votes": {
-      "sadness": 3
+      "sadness": 3,
+      "neutral": 1
     }
   },
   {
@@ -12368,7 +12584,9 @@
       "meme poster would rather look at ww3 memes about the war in ukraine rather than the actual news about it",
       "meme poster admits he does not watch news but gets his current events from obscure memes"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 4
+    }
   },
   {
     "category": "memes",
@@ -12390,14 +12608,15 @@
       }
     ],
     "post_id": "ywftnf",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.726,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7705,
     "sentiment_captions_used": [
       "the poles are about to start ww3 with russia despite anyone else's thoughts",
       "they will attack by air even when they are not expected to do so",
       "meme poster thinks polish pilots are incredulous"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1,
       "surprise": 1
     }
@@ -12432,7 +12651,8 @@
       "meme poster thinks people apologize for their mess when there isn't any"
     ],
     "sentiment_votes": {
-      "sadness": 3
+      "sadness": 3,
+      "neutral": 1
     }
   },
   {
@@ -12468,8 +12688,8 @@
       }
     ],
     "post_id": "ywjnum",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.5724,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6789,
     "sentiment_captions_used": [
       "people think the launching missiles for being a madman. but the truth is, he has been soo cool about preventing us from facing a huge problem over the years",
       "meme poster thinks kim jun un isn't crazy all the missiles he fires is to keep godzilla at bay",
@@ -12477,6 +12697,7 @@
       "meme poster muses about kim's true intentions"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "joy": 1
     }
   },
@@ -12541,14 +12762,15 @@
       }
     ],
     "post_id": "ywra78",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.6036,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7488,
     "sentiment_captions_used": [
       "in other countries like germany you can drive at age 14",
       "german kids can drink but can't drive or smoke",
       "meme poster thinks its funny that people in germany can drink at the age of 14, which is before they can smoke or drive"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "surprise": 1
     }
   },
@@ -12658,8 +12880,8 @@
       }
     ],
     "post_id": "ywtewy",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.7317,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9328,
     "sentiment_captions_used": [
       "they choose to use both adobe photoshop and mematic to make memes",
       "meme poster doesn't understand why they need to choose between memeatic and photoshop",
@@ -12667,6 +12889,7 @@
       "meme poster asserts they will use both options when presented with the choice"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "surprise": 1
     }
   },
@@ -12694,14 +12917,15 @@
       }
     ],
     "post_id": "ywu79h",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.6236,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6738,
     "sentiment_captions_used": [
       "meme poster does not see the difference between the two robots",
       "meme poster can't tell the difference between two franchises battle mechs",
       "the meme poster says that ironheart is similar to transformers"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "surprise": 1
     }
   },
@@ -12809,14 +13033,15 @@
       }
     ],
     "post_id": "ywylpr",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.5438,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7092,
     "sentiment_captions_used": [
       "the meme poster thinks the future cameraman would be filming in the space as opposed to the current ones running with the camera on the ground",
       "meme poster thinks the artemis 1 camera is so much better than the ones we have on earth",
       "meme poster says that, artemis camera man are way better that running camera man"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "surprise": 1
     }
   },
@@ -12867,6 +13092,7 @@
     ],
     "sentiment_votes": {
       "sadness": 2,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -12898,14 +13124,15 @@
       }
     ],
     "post_id": "ywzaju",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8807,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5759,
     "sentiment_captions_used": [
       "the meme poster gets easily distracted by other images and forgets about the image he came to search for",
       "the meme poster gets distracted by other images while searching an image",
       "meme poster spends lots of time looking at old photos in their gallery and getting nostalgic about them, instead of finding the photo they were looking for in the first place"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -12981,7 +13208,8 @@
       "the red mech he sees now reminds him of a character from megabots"
     ],
     "sentiment_votes": {
-      "surprise": 2
+      "surprise": 2,
+      "neutral": 2
     }
   },
   {
@@ -13004,14 +13232,15 @@
       }
     ],
     "post_id": "yx31gq",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.9307,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7523,
     "sentiment_captions_used": [
       "meme poster made their own take on thanos and infinity war",
       "the meme poster imitates thanos and his motto",
       "meme poster thinks a movie is suspiciously like the avengers"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "fear": 1
     }
   },
@@ -13040,8 +13269,8 @@
       }
     ],
     "post_id": "yx35kp",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.986,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4139,
     "sentiment_captions_used": [
       "though the meme poster's partner is yelling at him that it was 5 am, he was ready to go gym",
       "women get depressed that men leave and go to the gym",
@@ -13049,6 +13278,7 @@
       "a 'chad' won't be popular with their girlfriend but there are benefits to being selfish and going to the gym early, as you end up really fit"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "sadness": 1,
       "joy": 1
     }
@@ -13089,7 +13319,8 @@
       "the meme poster feels bad about being checked or noticed"
     ],
     "sentiment_votes": {
-      "sadness": 2
+      "sadness": 2,
+      "neutral": 1
     }
   },
   {
@@ -13129,7 +13360,8 @@
     ],
     "sentiment_votes": {
       "fear": 1,
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -13156,14 +13388,15 @@
       }
     ],
     "post_id": "yx804d",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.6844,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7789,
     "sentiment_captions_used": [
       "sometimes real and cartoon life are the same with pictures of tom and jerry",
       "cartoon characters can sometimes create real life cut scenarios",
       "charmed by real life version of cartoon"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -13196,8 +13429,8 @@
       }
     ],
     "post_id": "yx9327",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.9875,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6764,
     "sentiment_captions_used": [
       "meme poster believes they will win the lottery and won't listen to others",
       "scientists are fighting each other over the chance to win the lottery",
@@ -13205,6 +13438,7 @@
       "purposefully using bad maths regarding the chance of a lottery win to make a joke and is imagining how frustrated famous historical figures would feel if they thought people's mathematical literature really was that bad"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 2
     }
   },
@@ -13241,7 +13475,8 @@
     ],
     "sentiment_votes": {
       "disgust": 1,
-      "fear": 1
+      "fear": 1,
+      "neutral": 1
     }
   },
   {
@@ -13291,13 +13526,14 @@
       }
     ],
     "post_id": "yxafs1",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8423,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8594,
     "sentiment_captions_used": [
       "conveying some random people advising the meme poster about the reality of airdrops",
       "meme poster gets annoyed when someone in their class starts air dropping everyone"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -13361,14 +13597,15 @@
       }
     ],
     "post_id": "yxcco3",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.7702,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7348,
     "sentiment_captions_used": [
       "meme poster decided on what to call the oldest animal ancestor on earth",
       "meme poster decided to rename our common animal ancestor spug",
       "meme poster gives cute name to our collective ancestor"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -13405,7 +13642,9 @@
       "meme poster thinks older generation got away without accountability for their words",
       "this is the face when someone sent threats prior to the internet existing"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 4
+    }
   },
   {
     "category": "memes",
@@ -13431,14 +13670,15 @@
       }
     ],
     "post_id": "yxi6pj",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.4808,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8002,
     "sentiment_captions_used": [
       "the meme poster describes that, we're polluting the world for over 3 generations",
       "the meme poster describing the fact than human generations are destroying our earth for over the generations",
       "meme poster realizes our generation has too many toxins in our bodies"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1,
       "sadness": 1
     }
@@ -13483,7 +13723,8 @@
       "space travel is fake and forced on people to believe that it is real"
     ],
     "sentiment_votes": {
-      "anger": 2
+      "anger": 2,
+      "neutral": 1
     }
   },
   {
@@ -13507,8 +13748,8 @@
       }
     ],
     "post_id": "yxinri",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.5708,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5892,
     "sentiment_captions_used": [
       "the big mac with the bread and meat switched so it looks different like the switching up of the name of the burger up top",
       "meme poster made a internet naming switching convention into a big mac by switching the ham and buns",
@@ -13516,6 +13757,7 @@
       "the meme is funny because all big macs have bread, and they also changed the name"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "joy": 1
     }
   },
@@ -13600,6 +13842,7 @@
     ],
     "sentiment_votes": {
       "sadness": 1,
+      "neutral": 1,
       "disgust": 1
     }
   },
@@ -13715,6 +13958,7 @@
     ],
     "sentiment_votes": {
       "joy": 1,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -13752,7 +13996,8 @@
       "meme poster turns to ai for companionship"
     ],
     "sentiment_votes": {
-      "sadness": 3
+      "sadness": 3,
+      "neutral": 1
     }
   },
   {
@@ -13784,8 +14029,8 @@
       }
     ],
     "post_id": "yxrbtv",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.6778,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8217,
     "sentiment_captions_used": [
       "meme poster thinks if you make voice actors only be the race of the actor it limits the opportunity for all",
       "meme poster believes animation voice actors cast only for their race will limit opportunities for minority voice actors",
@@ -13793,6 +14038,7 @@
       "poster does not agree with company decision"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1,
       "sadness": 1
     }
@@ -13834,7 +14080,8 @@
     ],
     "sentiment_votes": {
       "fear": 1,
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -13866,8 +14113,8 @@
       }
     ],
     "post_id": "yxt126",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.962,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6221,
     "sentiment_captions_used": [
       "surprised there are two good songs about russia",
       "there's only two songs the meme poster likes about what is going on in russia",
@@ -13876,6 +14123,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -13989,7 +14237,8 @@
       "this is the face they make when they go into the bathroom and the seat is already warm"
     ],
     "sentiment_votes": {
-      "joy": 2
+      "joy": 2,
+      "neutral": 1
     }
   },
   {
@@ -14031,7 +14280,8 @@
     ],
     "sentiment_votes": {
       "fear": 1,
-      "anger": 2
+      "anger": 2,
+      "neutral": 1
     }
   },
   {
@@ -14063,7 +14313,9 @@
       "the meme poster says that the peanut butter is similar to plasma",
       "the peanut butter's main source is plasma"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 4
+    }
   },
   {
     "category": "memes",
@@ -14103,7 +14355,8 @@
       "child and teenagers are fighting each other and blaming them as kids"
     ],
     "sentiment_votes": {
-      "anger": 3
+      "anger": 3,
+      "neutral": 1
     }
   },
   {
@@ -14218,7 +14471,8 @@
     "sentiment_votes": {
       "anger": 1,
       "surprise": 1,
-      "joy": 1
+      "joy": 1,
+      "neutral": 1
     }
   },
   {
@@ -14246,8 +14500,8 @@
       }
     ],
     "post_id": "yy4lnf",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.8365,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.492,
     "sentiment_captions_used": [
       "they feel bad when they cough and it wakes their baby",
       "meme poster's baby woke up crying from the meme poster's cough even though they tried to cover it up",
@@ -14256,6 +14510,7 @@
     ],
     "sentiment_votes": {
       "sadness": 1,
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -14310,6 +14565,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 1,
       "anger": 1,
       "fear": 1
     }
@@ -14385,6 +14641,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 1,
       "anger": 2
     }
   },
@@ -14411,13 +14668,14 @@
       }
     ],
     "post_id": "yzgjpi",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8781,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8765,
     "sentiment_captions_used": [
       "the meme poster gives which is precious to him and the farmer gives what he preciously has",
       "they were rather displeased with getting wheat in return of giving something valuable as an emerald to villagers"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -14450,8 +14708,8 @@
       }
     ],
     "post_id": "yzi8x7",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.622,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5803,
     "sentiment_captions_used": [
       "the meme poster shares his experience of searching something at his wife's office",
       "meme poster uses his wife's office as a place to rob for his own supplies",
@@ -14459,6 +14717,7 @@
       "poster realizes his wife has a lot of office supplies"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1,
       "surprise": 1
     }
@@ -14496,8 +14755,8 @@
       }
     ],
     "post_id": "yzilog",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.6631,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8234,
     "sentiment_captions_used": [
       "their parents claim the trip will be 2 hours long but they bring an abundance of items that crowd the car",
       "meme poster over packs their entire car when they leave on a short trip",
@@ -14505,7 +14764,8 @@
       "they are well stocked with supplies even when they are in car"
     ],
     "sentiment_votes": {
-      "anger": 1
+      "anger": 1,
+      "neutral": 3
     }
   },
   {
@@ -14546,6 +14806,7 @@
       "poster thinks school gets in the way of watching an anime"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "surprise": 2,
       "sadness": 1
     }
@@ -14585,6 +14846,7 @@
     ],
     "sentiment_votes": {
       "disgust": 2,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -14621,8 +14883,8 @@
       }
     ],
     "post_id": "yzlm1n",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.5091,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6111,
     "sentiment_captions_used": [
       "meme poster wants to show off their boba fett collection",
       "meme poster owns many different boba fett toys to make a scene about one needing medicine",
@@ -14630,6 +14892,7 @@
       "they love the character boba fet from star wars"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "disgust": 1,
       "joy": 1
     }
@@ -14659,8 +14922,8 @@
       }
     ],
     "post_id": "yzm0ld",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.5119,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.3915,
     "sentiment_captions_used": [
       "the expressing its craze about a song and how it is hiding its reaction from people",
       "meme poster believes the song is so corny but also it goes hard",
@@ -14668,6 +14931,7 @@
       "the disconnect between the adult side of them which feels the thomas the tank engine song is lame and their childhood nostalgia which leads them to find it exciting on some level"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "disgust": 1,
       "joy": 1,
       "sadness": 1
@@ -14727,6 +14991,7 @@
       "whenever they go to costco, their bank account gets shot"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 3
     }
   },
@@ -14751,8 +15016,8 @@
       }
     ],
     "post_id": "yznjyc",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.5137,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6142,
     "sentiment_captions_used": [
       "there are not enough hours of daylight during winter work days",
       "meme poster spends all their working hours in winter in the only daylight hours",
@@ -14760,6 +15025,7 @@
       "how awful winter is, with daylight hours and work hours almost completely overlapping so most of your free time is spent after dark"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "fear": 1
     }
   },
@@ -14788,8 +15054,8 @@
       }
     ],
     "post_id": "yzoaao",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.3606,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7007,
     "sentiment_captions_used": [
       "remembering how they used to think when they were a child",
       "meme poster felt really small when he was a kid despite everyone telling him he was big",
@@ -14797,6 +15063,7 @@
       "they are a not a big boy at all even when told by other people"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "surprise": 1
     }
   },
@@ -14884,8 +15151,8 @@
       }
     ],
     "post_id": "yzqvf4",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.9092,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.639,
     "sentiment_captions_used": [
       "the meme poster finds wikipedia's pleas for financial support unfounded",
       "wikipedia is asking for money again despite asking for it",
@@ -14894,7 +15161,8 @@
     ],
     "sentiment_votes": {
       "anger": 1,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 2
     }
   },
   {
@@ -14935,7 +15203,8 @@
       "poster thinks counselor sees nothing succeeding in his future endeavors"
     ],
     "sentiment_votes": {
-      "sadness": 2
+      "sadness": 2,
+      "neutral": 2
     }
   },
   {
@@ -14968,7 +15237,8 @@
       "their excitement regarding reaching a high karma level in the game, which allows them to appear almost godlike compared to other players"
     ],
     "sentiment_votes": {
-      "joy": 3
+      "joy": 3,
+      "neutral": 1
     }
   },
   {
@@ -15104,6 +15374,7 @@
     ],
     "sentiment_votes": {
       "joy": 2,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -15143,7 +15414,8 @@
       "they'll buy something when there's free shipping, even if it costs the same total price with shipping"
     ],
     "sentiment_votes": {
-      "joy": 2
+      "joy": 2,
+      "neutral": 1
     }
   },
   {
@@ -15183,8 +15455,8 @@
       }
     ],
     "post_id": "z0052j",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.2868,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5748,
     "sentiment_captions_used": [
       "the meme poster's grandma thinks the meme poster looks great when he's awkward",
       "meme poster's grandma has a better self image of the meme poster than the meme poster themselves",
@@ -15193,6 +15465,7 @@
     ],
     "sentiment_votes": {
       "disgust": 1,
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -15254,7 +15527,8 @@
       "google search is better than bing search and bing is barely floating above water to compete with google search"
     ],
     "sentiment_votes": {
-      "surprise": 2
+      "surprise": 2,
+      "neutral": 2
     }
   },
   {
@@ -15286,8 +15560,8 @@
       }
     ],
     "post_id": "z03qi8",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.9883,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8919,
     "sentiment_captions_used": [
       "waiting for their energy to come back before talking to others at the party",
       "meme poster needs to recharge their reserves before partying with others",
@@ -15295,6 +15569,7 @@
       "poster has to wait for buffering before reentering chat room"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "sadness": 1
     }
   },
@@ -15361,8 +15636,8 @@
       }
     ],
     "post_id": "z05k7b",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.8601,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5795,
     "sentiment_captions_used": [
       "the ready to be a square rather than accepting his friend's command",
       "meme poster doesn't want to go out with his friends",
@@ -15370,6 +15645,7 @@
       "poster chooses to not attend event"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "sadness": 2
     }
   },
@@ -15406,7 +15682,8 @@
     ],
     "sentiment_votes": {
       "disgust": 1,
-      "joy": 1
+      "joy": 1,
+      "neutral": 1
     }
   },
   {
@@ -15448,7 +15725,8 @@
     ],
     "sentiment_votes": {
       "anger": 2,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -15476,8 +15754,8 @@
       }
     ],
     "post_id": "z0bdeo",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.8052,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7194,
     "sentiment_captions_used": [
       "they don't know how to make a hyperlink",
       "embarrassed about not knowing how to make a hyperlink",
@@ -15485,6 +15763,7 @@
       "embarrassed about their lack of i.t. skills but feels unable to ask for help with such a simple task"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "disgust": 1,
       "sadness": 1
     }
@@ -15518,8 +15797,8 @@
       }
     ],
     "post_id": "z0c8u4",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.6057,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4776,
     "sentiment_captions_used": [
       "meme poster british dentists are going to assault their patient's mouth",
       "british dentists try to fix teeth with instruments that won't solve any dental issue",
@@ -15528,6 +15807,7 @@
     ],
     "sentiment_votes": {
       "anger": 1,
+      "neutral": 2,
       "sadness": 1
     }
   },
@@ -15591,8 +15871,8 @@
       }
     ],
     "post_id": "z0d6op",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.4077,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6544,
     "sentiment_captions_used": [
       "every great video game is a little weird while call of duty games are cheap knockoffs now",
       "call of duty may be a more known game but strike force heroes is so much better",
@@ -15601,6 +15881,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -15628,14 +15909,15 @@
       }
     ],
     "post_id": "z0ebhp",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.5278,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5198,
     "sentiment_captions_used": [
       "meme poster tom cruise is notably short so must be standing on something to be as tall as everyone else",
       "the meme poster mocks tom cruise for showing his height by standing near to a shorter girl",
       "making fun of tom cruise's height and his beliefs in scientology"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -15674,6 +15956,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 1,
       "sadness": 2
     }
   },
@@ -15742,8 +16025,8 @@
       }
     ],
     "post_id": "z0gx82",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8746,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6644,
     "sentiment_captions_used": [
       "meme poster tries to understand why harry and megan are getting all the awards and attentions when no one they know cares",
       "meme poster everyone does their best to ignore the harry and megan coverage",
@@ -15751,6 +16034,7 @@
       "they are quite annoyed hearing how the two celebrities won their kennedy award"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 2
     }
   },
@@ -15799,7 +16083,9 @@
       "the meme poster exposes himself that he isn't constrained about the gender pronouns",
       "they're nonbinary and they're the boomer is non binary too since he said he doesn't participate in pronouns"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 4
+    }
   },
   {
     "category": "memes",
@@ -15863,14 +16149,15 @@
       }
     ],
     "post_id": "z0i6y2",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.7881,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4818,
     "sentiment_captions_used": [
       "this is the look they make when they are being watched",
       "aggravated people are paying too much attention to him",
       "very conscious when everyone is watching him"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -15905,7 +16192,9 @@
       "meme poster wants to remind them of the stylish clothes when they were younger",
       "they missed the past and want it back"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -15948,7 +16237,8 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -15980,8 +16270,8 @@
       }
     ],
     "post_id": "z0meji",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.8761,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5548,
     "sentiment_captions_used": [
       "conveying how people keep playing the same game due to lack of anything new",
       "meme poster realizes not buying video games in the steam sale has some drawbacks of no new video games",
@@ -15989,6 +16279,7 @@
       "unimpressed by steam sale"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "sadness": 1,
       "surprise": 1
     }
@@ -16026,7 +16317,8 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
-      "disgust": 1
+      "disgust": 1,
+      "neutral": 1
     }
   },
   {
@@ -16139,6 +16431,7 @@
       "meme poster can't bear the worst editing"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "disgust": 2
     }
   },
@@ -16177,6 +16470,7 @@
     ],
     "sentiment_votes": {
       "joy": 2,
+      "neutral": 1,
       "disgust": 1
     }
   },
@@ -16214,7 +16508,8 @@
       "it was not their fault they were in this world, but blames their mom for it"
     ],
     "sentiment_votes": {
-      "anger": 2
+      "anger": 2,
+      "neutral": 2
     }
   },
   {
@@ -16367,8 +16662,8 @@
       }
     ],
     "post_id": "z0yvgv",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.8918,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7692,
     "sentiment_captions_used": [
       "still processing the past to see the dangers of life today",
       "meme poster has a hard enough time dealing with the past to forget about the present",
@@ -16377,6 +16672,7 @@
     ],
     "sentiment_votes": {
       "fear": 1,
+      "neutral": 2,
       "surprise": 1
     }
   },
@@ -16425,8 +16721,8 @@
       }
     ],
     "post_id": "z10zlx",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.449,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.629,
     "sentiment_captions_used": [
       "they see a lot of vein people at the gym taking mirror selfies",
       "gym users will always take a selfie pic when walking past a mirror",
@@ -16434,7 +16730,8 @@
       "people who go to the gym are obsessed with taking selfies of their physique"
     ],
     "sentiment_votes": {
-      "disgust": 1
+      "disgust": 1,
+      "neutral": 3
     }
   },
   {
@@ -16467,7 +16764,8 @@
       "a different version of the nope movie with an arab person instead of a black person"
     ],
     "sentiment_votes": {
-      "fear": 3
+      "fear": 3,
+      "neutral": 1
     }
   },
   {
@@ -16575,15 +16873,16 @@
       }
     ],
     "post_id": "z14qnp",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.5338,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6736,
     "sentiment_captions_used": [
       "movie studio announces they are going the safe route and having mads mikkelson play another villain",
       "meme poster hollywood believes every franchise needs mads mikkelson as it's villain",
       "poster recognizes mads mikkelsen as a reliable choice for any role"
     ],
     "sentiment_votes": {
-      "joy": 1
+      "joy": 1,
+      "neutral": 2
     }
   },
   {
@@ -16680,7 +16979,8 @@
     ],
     "sentiment_votes": {
       "fear": 2,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -16720,7 +17020,8 @@
     ],
     "sentiment_votes": {
       "anger": 1,
-      "disgust": 1
+      "disgust": 1,
+      "neutral": 1
     }
   },
   {
@@ -16762,7 +17063,9 @@
       "the meme poster describes the clash between ranch and blue cheese",
       "blue cheese looks like a man getting beat up and ranch is a happy go lucky guy and the person prefers ranch"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -16796,7 +17099,8 @@
       "suggesting that soccer and basketball players are happy to fake injuries once they realise it might help their team to win"
     ],
     "sentiment_votes": {
-      "joy": 2
+      "joy": 2,
+      "neutral": 1
     }
   },
   {
@@ -16879,8 +17183,8 @@
       }
     ],
     "post_id": "z19g85",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.801,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4313,
     "sentiment_captions_used": [
       "they find old-fashioned games more interesting than new technology",
       "meme poster enjoys playing pong more than most modern video games",
@@ -16888,6 +17192,7 @@
       "new games don't excite people like they use to like pong did"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 2
     }
   },
@@ -16915,14 +17220,15 @@
       }
     ],
     "post_id": "z1a9hz",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.4455,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7613,
     "sentiment_captions_used": [
       "even if there's little food left in emergency situations the going to eat a lot of protein to gain muscle, it's that important",
       "meme poster will eat all the apocalypse food to protect his weight instead of caring about their friends",
       "stating his case for eating all the food"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -16961,7 +17267,8 @@
     ],
     "sentiment_votes": {
       "anger": 1,
-      "surprise": 2
+      "surprise": 2,
+      "neutral": 1
     }
   },
   {
@@ -16996,14 +17303,15 @@
       }
     ],
     "post_id": "z1edch",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.9248,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8249,
     "sentiment_captions_used": [
       "conveying twitter users go long distances to tell people they are leaving twitter but never do",
       "people who are leaving twitter want to announce that even at the cost of other people's privacy and peace",
       "the meme poster mocks twitter for wantedly selling the blue ticks"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -17036,8 +17344,8 @@
       }
     ],
     "post_id": "z1g3aw",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.6891,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5093,
     "sentiment_captions_used": [
       "meme poster doesn't understand taylor swift and doesn't want to",
       "indifference about taylor swift",
@@ -17045,7 +17353,8 @@
       "the not being bothered about the consiparcies behind taylor swift"
     ],
     "sentiment_votes": {
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 3
     }
   },
   {
@@ -17088,6 +17397,7 @@
     "sentiment_votes": {
       "joy": 1,
       "sadness": 1,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -17130,6 +17440,7 @@
     ],
     "sentiment_votes": {
       "joy": 2,
+      "neutral": 1,
       "sadness": 1
     }
   },
@@ -17168,7 +17479,8 @@
     ],
     "sentiment_votes": {
       "anger": 2,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -17216,7 +17528,9 @@
       "poster proclaims the ability to eat a family sized bag by himself",
       "they are unstoppable when eating a bag of chips"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 4
+    }
   },
   {
     "category": "memes",
@@ -17289,6 +17603,7 @@
       "poster ignores his brain waring him about bad decisions"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 3
     }
   },
@@ -17316,14 +17631,15 @@
       }
     ],
     "post_id": "z1mhbr",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.8837,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.787,
     "sentiment_captions_used": [
       "meme poster fifa has denied the meme poster's claim about wearing onelove during the game",
       "meme poster fifa threatens any player supporting lgbt people with a yellow card",
       "the meme poster mocks fifa for the usage of onelove during the game"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "fear": 1,
       "anger": 1
     }
@@ -17473,8 +17789,8 @@
       }
     ],
     "post_id": "z1uhl2",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.6298,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5696,
     "sentiment_captions_used": [
       "the meme poster gives a weird reaction when it someone didn't tell him that the spoon doesn't actually sound like airplanes",
       "meme poster babies know spoons don't actually sound like airplanes when you are feeding them",
@@ -17483,6 +17799,7 @@
     ],
     "sentiment_votes": {
       "disgust": 1,
+      "neutral": 2,
       "surprise": 1
     }
   },
@@ -17511,8 +17828,8 @@
       }
     ],
     "post_id": "z1wyh6",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.7745,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7503,
     "sentiment_captions_used": [
       "meme poster waited so long for the new spiderverse movie and they died",
       "meme poster has waited a long time for the sequel to spiderverse",
@@ -17520,7 +17837,8 @@
       "they've been waiting for so long for the spider man sequel they've turn into a skeleton"
     ],
     "sentiment_votes": {
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 3
     }
   },
   {
@@ -17608,6 +17926,7 @@
       "corporations will do anything to get you even after hard times and the man's face represents the corporations, ruthless and murderous"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "joy": 1,
       "anger": 2
     }
@@ -17651,7 +17970,8 @@
     ],
     "sentiment_votes": {
       "fear": 2,
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -17683,8 +18003,8 @@
       }
     ],
     "post_id": "z22zk5",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.8366,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6562,
     "sentiment_captions_used": [
       "the meme poster thinks if he sets his mind to create good youtube videos then no one can match his quality of work",
       "excited their favorite youtube channel defuctland is back",
@@ -17692,6 +18012,7 @@
       "poster cannot compete with opponent"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "surprise": 1,
       "fear": 1
     }
@@ -17809,14 +18130,15 @@
       }
     ],
     "post_id": "z23u3q",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.7531,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6776,
     "sentiment_captions_used": [
       "meme poster can handle small decisions like choosing shower music but screws up the important ones",
       "meme poster can easily make simple life choices but screw up the hard decisions",
       "frustrated that they are able to spend time and energy focusing on choosing the right music to listen to, but they are unable to focus enough to make important life decisions"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "surprise": 1
     }
   },
@@ -17848,14 +18170,15 @@
       }
     ],
     "post_id": "z252ft",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.7557,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5273,
     "sentiment_captions_used": [
       "meme poster thinks instagram models pop their body parts out sexually to get the likes a lot more than normal people",
       "meme poster mocks instagram models for their hot poses",
       "poster thinks instagram models are not telling the truth about their bodies"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -17898,7 +18221,8 @@
     ],
     "sentiment_votes": {
       "sadness": 1,
-      "anger": 2
+      "anger": 2,
+      "neutral": 1
     }
   },
   {
@@ -17933,7 +18257,8 @@
       "the meme poster mocks the people who are pretending to love rather than hiding their original thoughts and feelings"
     ],
     "sentiment_votes": {
-      "anger": 2
+      "anger": 2,
+      "neutral": 1
     }
   },
   {
@@ -17961,8 +18286,8 @@
       }
     ],
     "post_id": "z5zufc",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.679,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5832,
     "sentiment_captions_used": [
       "meme poster's dog takes off when asked what they got in their mouth because they know they took something the meme owner wants",
       "the meme poster's dog takes off when the meme poster wants to know what is in their mouth",
@@ -17970,6 +18295,7 @@
       "hates their dog's eating habits"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "disgust": 2
     }
   },
@@ -18009,7 +18335,8 @@
       "meme poster thinks ending racism isn't as easy as it seems"
     ],
     "sentiment_votes": {
-      "anger": 2
+      "anger": 2,
+      "neutral": 1
     }
   },
   {
@@ -18037,8 +18364,8 @@
       }
     ],
     "post_id": "z62gp0",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.3522,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5409,
     "sentiment_captions_used": [
       "meme poster reveals john cena's first acting credit",
       "meme poster wants to learn about wrestlers becoming actors and sees john cena's first acting credit",
@@ -18046,7 +18373,8 @@
       "meme poster john cena started the trend for wrestlers to become actors"
     ],
     "sentiment_votes": {
-      "surprise": 1
+      "surprise": 1,
+      "neutral": 3
     }
   },
   {
@@ -18074,8 +18402,8 @@
       }
     ],
     "post_id": "z67t9a",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.4094,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.761,
     "sentiment_captions_used": [
       "aggravated people finish their christmas shopping before december starts",
       "struggling to sound happy at people finishing their christmas shopping before december",
@@ -18083,6 +18411,7 @@
       "hates people who do their christmas shopping early"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "fear": 1,
       "sadness": 1
     }
@@ -18116,8 +18445,8 @@
       }
     ],
     "post_id": "z67yg7",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.9386,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7961,
     "sentiment_captions_used": [
       "they don't agree with this gender trend that is happening with society",
       "trans people want to remind people how christmas is spelled with the hrt they take",
@@ -18125,6 +18454,7 @@
       "you have to be inclusive so you don't offend anyone"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "anger": 1
     }
   },
@@ -18280,7 +18610,8 @@
       "poster does not know what he wants after waiting in line"
     ],
     "sentiment_votes": {
-      "sadness": 2
+      "sadness": 2,
+      "neutral": 1
     }
   },
   {
@@ -18316,8 +18647,8 @@
       }
     ],
     "post_id": "z6e0bf",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.3144,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.705,
     "sentiment_captions_used": [
       "the pursuing art school for 25k to get escape from the society's labeling of illiterate",
       "meme poster art school being expensive isn't a valid argument compared to everyone else's debt",
@@ -18326,6 +18657,7 @@
     ],
     "sentiment_votes": {
       "fear": 1,
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -18368,6 +18700,7 @@
     ],
     "sentiment_votes": {
       "fear": 2,
+      "neutral": 1,
       "joy": 1
     }
   },
@@ -18430,8 +18763,8 @@
       }
     ],
     "post_id": "z6hedc",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.844,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6079,
     "sentiment_captions_used": [
       "the meme poster makes fun out of genie to be with him forever",
       "meme poster wants the genie to be quiet as one of their three wishes",
@@ -18440,6 +18773,7 @@
     ],
     "sentiment_votes": {
       "joy": 1,
+      "neutral": 2,
       "sadness": 1
     }
   },
@@ -18473,7 +18807,8 @@
       "hollywood is making people do facial expressions for movies now"
     ],
     "sentiment_votes": {
-      "anger": 3
+      "anger": 3,
+      "neutral": 1
     }
   },
   {
@@ -18548,8 +18883,8 @@
       }
     ],
     "post_id": "z6jkl9",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8825,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6972,
     "sentiment_captions_used": [
       "being named after one fictional character called grond provides good results",
       "the meme poster mocks the people who doesn't know the value of the fictional characters",
@@ -18557,6 +18892,7 @@
       "naming your child after a character wont fly with women but only ok with characters you are name you child with"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "anger": 1
     }
   },
@@ -18591,6 +18927,7 @@
     ],
     "sentiment_votes": {
       "surprise": 2,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -18670,8 +19007,8 @@
       }
     ],
     "post_id": "z6mvvw",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8293,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7128,
     "sentiment_captions_used": [
       "the meme poster mocks the algorithm of the subtitle for not understanding english dialogues properly",
       "meme poster thinks subtitles always use foreign when describing anything they can't immediately identify",
@@ -18680,6 +19017,7 @@
     ],
     "sentiment_votes": {
       "anger": 1,
+      "neutral": 2,
       "disgust": 1
     }
   },
@@ -18766,8 +19104,8 @@
       }
     ],
     "post_id": "z6rywg",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.6981,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7322,
     "sentiment_captions_used": [
       "past scientists accepted people challenging their findings in a way scientist of today don't",
       "scientists of the past welcomed people to disagree with their findings in a way modern scientists do not",
@@ -18775,6 +19113,7 @@
       "scientists years ago were a lot more open minded compared to now"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "anger": 1
     }
   },
@@ -18815,8 +19154,8 @@
       }
     ],
     "post_id": "z6u1az",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.4229,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7154,
     "sentiment_captions_used": [
       "meme poster's stomach doesn't want to eat at normal times but wants to eat at 3am",
       "meme poster's stomach doesn't want them to eat during normal hours but instead wakes them up to eat at 3 am",
@@ -18824,7 +19163,8 @@
       "while he had the freedom to eat whatever he wants, he would starve to death at 3 am so he can grab a midnight snack"
     ],
     "sentiment_votes": {
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 3
     }
   },
   {
@@ -18863,14 +19203,15 @@
       }
     ],
     "post_id": "z6vs9s",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.9799,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8757,
     "sentiment_captions_used": [
       "the people who know the penguin anime girl meme have a different response than those that don't",
       "the people who know about the penguin and the anime girl are left saddened",
       "poster if you understand the figures you are privy to selected information"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "sadness": 1
     }
   },
@@ -18902,14 +19243,15 @@
       }
     ],
     "post_id": "z6wtmi",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.5171,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4463,
     "sentiment_captions_used": [
       "the meme poster expresses that he prefers commentators to commenters",
       "the meme poster likes commentator than commenter",
       "poster thinks commenters do not listen to commentators"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "surprise": 1
     }
   },
@@ -19021,14 +19363,15 @@
       }
     ],
     "post_id": "z71b21",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.4769,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.4174,
     "sentiment_captions_used": [
       "poor people don't have the moves available to them to move out of poverty despite what critics think",
       "rich people think poor people should try to make moves to get out of poverty, but there are no moves for them to make",
       "rich forgot there are not many moves to make when in poverty"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -19071,6 +19414,7 @@
     ],
     "sentiment_votes": {
       "sadness": 2,
+      "neutral": 1,
       "fear": 1
     }
   },
@@ -19095,8 +19439,8 @@
       }
     ],
     "post_id": "z73vkp",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.3674,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.3762,
     "sentiment_captions_used": [
       "dj khalid is a large person so they need the extra handcuffs when he is arrested",
       "dj khalid is a large man",
@@ -19104,6 +19448,7 @@
       "surprised at number of restraints needed for a patricular person"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "disgust": 1,
       "surprise": 1
     }
@@ -19137,8 +19482,8 @@
       }
     ],
     "post_id": "z7760c",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.6101,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7651,
     "sentiment_captions_used": [
       "americans are protective about the game of football in america",
       "meme poster mistakenly got on the wrong side of the soccer/football debate and is trying to escape the chaos",
@@ -19146,6 +19491,7 @@
       "europeans and americans have a way different definition of football"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "sadness": 1
     }
   },
@@ -19219,6 +19565,7 @@
     ],
     "sentiment_votes": {
       "disgust": 2,
+      "neutral": 1,
       "anger": 1
     }
   },
@@ -19292,8 +19639,8 @@
       }
     ],
     "post_id": "z7b3se",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.79,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8507,
     "sentiment_captions_used": [
       "their interpretation of what the character they were expecting based on their experience",
       "tim burton productions normally star johnny depp so meme poster was surprised he wasn't in the wednesday show",
@@ -19301,6 +19648,7 @@
       "this is what they envisioned when a certain producer produces their favourite show"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "surprise": 2
     }
   },
@@ -19335,7 +19683,9 @@
       "the regency period required to people to be way more formal about their speech and that is good",
       "poster likes to sound fancy while asking for something"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -19455,7 +19805,8 @@
     "sentiment_votes": {
       "surprise": 1,
       "fear": 1,
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -19483,8 +19834,8 @@
       }
     ],
     "post_id": "z9gguj",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.5982,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8157,
     "sentiment_captions_used": [
       "different from people who learned english in school",
       "meme poster thinks there is a wide difference between those who learned english through memes and those who learned in it school",
@@ -19492,6 +19843,7 @@
       "meme poster somehow learned english from the internet"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "joy": 1
     }
   },
@@ -19527,14 +19879,15 @@
       }
     ],
     "post_id": "z9kb3b",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.5465,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6017,
     "sentiment_captions_used": [
       "it is now december so mariah will be played everywhere during christmas",
       "annoyed that since christmastime has come, it means that mariah carey's famous christmas song will be playing repeatedly",
       "christmas is here"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1
     }
   },
@@ -19611,7 +19964,9 @@
       "the meme poster states the capability of ai developed image",
       "poster thinks updated chad is better than the old one"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -19634,8 +19989,8 @@
       }
     ],
     "post_id": "za1tds",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8743,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7497,
     "sentiment_captions_used": [
       "meme poster created a merge of kanye and trump photoshopped together since they are the same person now",
       "kanye west and trump have merged into the same person",
@@ -19643,6 +19998,7 @@
       "an image of trump and kanye if they were one person would look like"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "anger": 1
     }
   },
@@ -19671,8 +20027,8 @@
       }
     ],
     "post_id": "za21oo",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.3745,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6649,
     "sentiment_captions_used": [
       "meme poster wants shrek memes to be as popular as spongebob ones",
       "meme poster wants to know why shrek memes aren't as popular as spongebob memes",
@@ -19680,6 +20036,7 @@
       "poster muses about lack of shrek memes"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1,
       "sadness": 1
     }
@@ -19764,7 +20121,9 @@
       "you have a choice to pick between a cat girlfriend or a dog",
       "choosing between two things that you like is not always easy to do"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 4
+    }
   },
   {
     "category": "memes",
@@ -19795,8 +20154,8 @@
       }
     ],
     "post_id": "za6lhz",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.979,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5351,
     "sentiment_captions_used": [
       "how prideful people feel when they think they're successful yet they're falling",
       "meme poster feels shot down by the sarcastic response to their sincere emotional playlist",
@@ -19805,7 +20164,8 @@
     ],
     "sentiment_votes": {
       "joy": 1,
-      "anger": 1
+      "anger": 1,
+      "neutral": 2
     }
   },
   {
@@ -19840,14 +20200,15 @@
       }
     ],
     "post_id": "za788f",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8311,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5094,
     "sentiment_captions_used": [
       "kanye used to duet with jayz and now he pairs up with hitler",
       "the meme poster mocks kanye's contoversial act",
       "meme poster liked ye before his radical change"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 1,
       "surprise": 1
     }
@@ -19875,13 +20236,14 @@
       }
     ],
     "post_id": "za84ao",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.498,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8407,
     "sentiment_captions_used": [
       "meme poster thinks kanye west is really the same as the black racist character from a dave chapelle sketch",
       "meme poster doesn't know the difference between a black klan member and kanye west"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "surprise": 1
     }
   },
@@ -19918,7 +20280,9 @@
       "meme poster describes the hard work of villain and the smartness of hero",
       "poster thinks friendship is very powerful"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 4
+    }
   },
   {
     "category": "memes",
@@ -19955,7 +20319,9 @@
       "ready to buy the discounted kanye shoes after his recent comments",
       "the when ye shoes go on sale they get excited and have to ensure they are ready for the mad dash to the store to buy them"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -19986,8 +20352,8 @@
       }
     ],
     "post_id": "zaa2kq",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.6198,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6969,
     "sentiment_captions_used": [
       "they edited the weather report guy to look like the villain from gi joe",
       "kanye west has become the villainous cobra commander",
@@ -19995,6 +20361,7 @@
       "they edited the weatherman picture to look like a cartoon character from gi joe"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "anger": 1
     }
   },
@@ -20111,8 +20478,8 @@
       }
     ],
     "post_id": "zaccd7",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.3952,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8036,
     "sentiment_captions_used": [
       "they've used a butter knife as a makeshift screwdriver",
       "a butter knife can be a flathead screwdriver when you need it",
@@ -20120,7 +20487,8 @@
       "any one can identify as anything like a butter knife"
     ],
     "sentiment_votes": {
-      "disgust": 1
+      "disgust": 1,
+      "neutral": 3
     }
   },
   {
@@ -20155,7 +20523,8 @@
       "meme poster mocks info wars 2022 for its poor content"
     ],
     "sentiment_votes": {
-      "anger": 2
+      "anger": 2,
+      "neutral": 1
     }
   },
   {
@@ -20191,8 +20560,8 @@
       }
     ],
     "post_id": "zaj2v4",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.6601,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6258,
     "sentiment_captions_used": [
       "meme poster who plays video games all day feels superior to a engineer",
       "meme poster spend hours using a computer program is more expertise than an engineer with a master's degree",
@@ -20201,6 +20570,7 @@
     ],
     "sentiment_votes": {
       "joy": 1,
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -20233,8 +20603,8 @@
       }
     ],
     "post_id": "zakrpv",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.8301,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8507,
     "sentiment_captions_used": [
       "a homie decides to take the path of friendship rather than the dark side they have been before",
       "meme poster decides to be a good friend instead of what they were doing previously",
@@ -20242,7 +20612,8 @@
       "their friends will ride or die with them"
     ],
     "sentiment_votes": {
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 3
     }
   },
   {
@@ -20314,8 +20685,8 @@
       }
     ],
     "post_id": "zamn76",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.7441,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5004,
     "sentiment_captions_used": [
       "meme poster thought it was a short nap but it was years long",
       "a creepy old man is shocked to learn they overslept the school bus",
@@ -20323,6 +20694,7 @@
       "he had the best sleep in a while that he woke up thinking he still has to go school"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "surprise": 2
     }
   },
@@ -20363,7 +20735,9 @@
       "relying on vitamins they ate in 2014 to fight off their sickness now",
       "the meme poster describes the vitamins which he took before years are ready to fight against its enemy at the right time"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 4
+    }
   },
   {
     "category": "memes",
@@ -20394,8 +20768,8 @@
       }
     ],
     "post_id": "zanecu",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.7827,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7399,
     "sentiment_captions_used": [
       "going on reddit means he will find out the shady stuff about kanye west",
       "meme poster enjoys looking at the kanye memes despite knowing kanye would be hates it",
@@ -20403,6 +20777,7 @@
       "poster knows ye memes are looming around the internet"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1,
       "surprise": 1
     }
@@ -20445,6 +20820,7 @@
       "how fellow school mates are happy to copy each other even if its doing something illegal"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "surprise": 1,
       "joy": 2
     }
@@ -20484,7 +20860,8 @@
     ],
     "sentiment_votes": {
       "surprise": 2,
-      "joy": 1
+      "joy": 1,
+      "neutral": 1
     }
   },
   {
@@ -20524,7 +20901,8 @@
     ],
     "sentiment_votes": {
       "anger": 1,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -20562,7 +20940,9 @@
       "trying to run from their mistake of googling ice cream in chinese",
       "the meme poster realizes his mistake after translating the word \"ice cream\" to chinese"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -20593,8 +20973,8 @@
       }
     ],
     "post_id": "zaooym",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.5099,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6082,
     "sentiment_captions_used": [
       "meme poster kanye has turned into the gimp from pulp fiction",
       "meme poster kanye is now indistinguishable from the gimp from pulp fiction",
@@ -20602,6 +20982,7 @@
       "meme poster this individual who was on tv looks like the gimp character in pulp fiction and finds this similarity quite funny"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "joy": 1
     }
   },
@@ -20626,8 +21007,8 @@
       }
     ],
     "post_id": "zap0cv",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.425,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7119,
     "sentiment_captions_used": [
       "meme poster will say kanye is a klan member from a sketch rather than himself",
       "meme poster will tell the kids kanye was as much of a white supremacist as a klan member",
@@ -20635,6 +21016,7 @@
       "poster vows to present ye as a racist in the future"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 1,
       "anger": 1
     }
@@ -20681,6 +21063,7 @@
       "poster thinks ye's pr team is failing"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "anger": 2,
       "sadness": 1
     }
@@ -20719,6 +21102,7 @@
       "poster learns from watching others mess up"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "sadness": 2,
       "anger": 1
     }
@@ -20833,8 +21217,8 @@
       }
     ],
     "post_id": "zaz01v",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8129,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6609,
     "sentiment_captions_used": [
       "trying to sneak into their own laptop and accounts",
       "meme poster tries to be sneaky when logging back in",
@@ -20843,6 +21227,7 @@
     ],
     "sentiment_votes": {
       "anger": 1,
+      "neutral": 2,
       "fear": 1
     }
   },
@@ -20871,8 +21256,8 @@
       }
     ],
     "post_id": "zazmu3",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.7031,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6126,
     "sentiment_captions_used": [
       "kanye west has gone insane and he needs another person like pete davidson to watch him",
       "meme poster pete davidson understands to take your meds improves your mental health is what kanye needs right now",
@@ -20880,6 +21265,7 @@
       "meme poster peter davidson tried to help kanye during a period of mental illness but kanye refused to listen and instead further damaged his reputation"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "sadness": 1
     }
   },
@@ -20911,15 +21297,16 @@
       }
     ],
     "post_id": "zb0jl1",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.5633,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.86,
     "sentiment_captions_used": [
       "a superhero extra is walking around lazily after a long day during the big avengers finale",
       "the meme poster describes that, adam warlock hasn't bother anything about the guardians of galaxy",
       "the blond man walks without shoes while the other superheroes are walking with them"
     ],
     "sentiment_votes": {
-      "joy": 1
+      "joy": 1,
+      "neutral": 2
     }
   },
   {
@@ -20960,7 +21347,8 @@
       "they will read reviews of games they played to make themselves feel good about playing the game"
     ],
     "sentiment_votes": {
-      "joy": 3
+      "joy": 3,
+      "neutral": 1
     }
   },
   {
@@ -21000,6 +21388,7 @@
     ],
     "sentiment_votes": {
       "anger": 1,
+      "neutral": 1,
       "sadness": 1
     }
   },
@@ -21028,8 +21417,8 @@
       }
     ],
     "post_id": "zb4sls",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.9691,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8651,
     "sentiment_captions_used": [
       "angry when people comment about them not being able to lift weights",
       "the meme poster regrets the deadlift task at the gym",
@@ -21038,7 +21427,8 @@
     ],
     "sentiment_votes": {
       "anger": 1,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 2
     }
   },
   {
@@ -21074,7 +21464,8 @@
     ],
     "sentiment_votes": {
       "fear": 1,
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -21105,7 +21496,8 @@
       "the meme poster mocks lgbtq for advertising their ideas"
     ],
     "sentiment_votes": {
-      "anger": 2
+      "anger": 2,
+      "neutral": 1
     }
   },
   {
@@ -21133,8 +21525,8 @@
       }
     ],
     "post_id": "zb7wfy",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.9627,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7731,
     "sentiment_captions_used": [
       "they prefer songs they know from memes over songs they know from hearing them in public",
       "meme poster finds most of the music they like from memes not real life",
@@ -21142,6 +21534,7 @@
       "poster enjoys discovering new music through memes"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "joy": 1
     }
   },
@@ -21183,7 +21576,8 @@
       "poster thinks he was a mistake by his parents"
     ],
     "sentiment_votes": {
-      "sadness": 3
+      "sadness": 3,
+      "neutral": 1
     }
   },
   {
@@ -21218,6 +21612,7 @@
       "the meme poster describes about the fame of cow's fart"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "disgust": 2
     }
   },
@@ -21250,8 +21645,8 @@
       }
     ],
     "post_id": "zbl3se",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.3395,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5208,
     "sentiment_captions_used": [
       "meme poster thinks forbes is trying to put out the fire of their founder losing a lot of money",
       "the chaotic environment of forbes at the time a new person arrives",
@@ -21259,6 +21654,7 @@
       "poster thinks magazine is in a disastrous state"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "fear": 1,
       "sadness": 1
     }
@@ -21349,7 +21745,8 @@
       "they look like norman osborne from spiderman when they fixed something"
     ],
     "sentiment_votes": {
-      "joy": 3
+      "joy": 3,
+      "neutral": 1
     }
   },
   {
@@ -21394,6 +21791,7 @@
       "after having a haircut they first feel a little more handsome and then over the coming days their self esteem increases rapidly, so they feel like a new person"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "joy": 2,
       "disgust": 1
     }
@@ -21449,7 +21847,9 @@
       "because the meme poster posts all day they are able to turn down pressures like drugs that others cannot",
       "ytmnd has been around for quite some time, to the point a redditor asks how they're still alive"
     ],
-    "sentiment_votes": {}
+    "sentiment_votes": {
+      "neutral": 3
+    }
   },
   {
     "category": "memes",
@@ -21508,8 +21908,8 @@
       }
     ],
     "post_id": "zbnn65",
-    "sentiment_label": "joy",
-    "sentiment_score": 0.8242,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7586,
     "sentiment_captions_used": [
       "comparing their good mood to the permanent mood of tom from myspace",
       "meme poster thinks tom from myspace is the only social media creator happy because he doesn't have to do it anymore",
@@ -21517,6 +21917,7 @@
       "poster thinks he should be more content in the new year"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "joy": 2
     }
   },
@@ -21600,8 +22001,8 @@
       }
     ],
     "post_id": "zbqtij",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.6348,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5547,
     "sentiment_captions_used": [
       "the how real the video edits look on youtube these days for some wild unrealistic images and some cool things you could do on youtube which has the capacity to change people into anything they want",
       "youtube conspiracy videos are so out there they are questioning whether kanye was a literal nazi or a metaphorical one",
@@ -21610,6 +22011,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -21642,8 +22044,8 @@
       }
     ],
     "post_id": "zbrpeo",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.9693,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7471,
     "sentiment_captions_used": [
       "meme poster breaks up with girlfriend for not being jenny ortega",
       "meme poster doesn't want to mess any woman that is not jenny ortega",
@@ -21651,7 +22053,8 @@
       "they want a girl like jenna ortega"
     ],
     "sentiment_votes": {
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 3
     }
   },
   {
@@ -21739,7 +22142,8 @@
     ],
     "sentiment_votes": {
       "sadness": 2,
-      "fear": 1
+      "fear": 1,
+      "neutral": 1
     }
   },
   {
@@ -21845,8 +22249,8 @@
       }
     ],
     "post_id": "zbxpwu",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8201,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.71,
     "sentiment_captions_used": [
       "the squirrel character in question can one-up anime characters pretty well",
       "scrat from ice age is tougher than almost all the anime characters",
@@ -21854,6 +22258,7 @@
       "the cartoon squirrel could beat half of the anime characters that are supposedly strong"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "anger": 1
     }
   },
@@ -21931,7 +22336,8 @@
     "sentiment_votes": {
       "surprise": 1,
       "anger": 1,
-      "sadness": 1
+      "sadness": 1,
+      "neutral": 1
     }
   },
   {
@@ -21958,14 +22364,15 @@
       }
     ],
     "post_id": "zc4931",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.846,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6849,
     "sentiment_captions_used": [
       "meme poster doesn't seem the difference between the kingpin comic book villain and jeff bezos",
       "meme poster doesn't know the difference between lex luther and jeff bezos",
       "the meme poster mocks jeff by comparing him with the negative fictional character"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -22006,8 +22413,8 @@
       }
     ],
     "post_id": "zc501y",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.8485,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7293,
     "sentiment_captions_used": [
       "internet trolls are only brave because their face is hidden",
       "the meme poster thinks they made a good post until the comment section criticizes it",
@@ -22015,6 +22422,7 @@
       "poster thinks some commets on posts are unnecessarily offensive"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "anger": 2
     }
   },
@@ -22055,8 +22463,8 @@
       }
     ],
     "post_id": "zc68n0",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.6342,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7843,
     "sentiment_captions_used": [
       "they prefer when companies remaster old games instead of coming out with sequels or new games",
       "video games companies should focus more on remastering old games than on new ones",
@@ -22064,6 +22472,7 @@
       "the their different reactions to new games vs old games"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "surprise": 1
     }
   },
@@ -22147,8 +22556,8 @@
       }
     ],
     "post_id": "zc8w32",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.9761,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5738,
     "sentiment_captions_used": [
       "women wonder why men don't understand their signals when they are overly complicated",
       "conveying the variety of mixed signals sent to them by a woman",
@@ -22157,6 +22566,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -22270,8 +22680,8 @@
       }
     ],
     "post_id": "zcd4p8",
-    "sentiment_label": "surprise",
-    "sentiment_score": 0.8229,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6755,
     "sentiment_captions_used": [
       "meme poster feels overwhelmed and needs help solving simple and easy problems they can solve themselves",
       "meme poster struggles the most with simple problems they solve easily",
@@ -22280,6 +22690,7 @@
     ],
     "sentiment_votes": {
       "surprise": 1,
+      "neutral": 2,
       "anger": 1
     }
   },
@@ -22322,6 +22733,7 @@
     ],
     "sentiment_votes": {
       "anger": 2,
+      "neutral": 1,
       "disgust": 1
     }
   },
@@ -22391,6 +22803,7 @@
     ],
     "sentiment_votes": {
       "disgust": 1,
+      "neutral": 1,
       "anger": 2
     }
   },
@@ -22464,7 +22877,8 @@
     ],
     "sentiment_votes": {
       "joy": 2,
-      "anger": 1
+      "anger": 1,
+      "neutral": 1
     }
   },
   {
@@ -22488,8 +22902,8 @@
       }
     ],
     "post_id": "zcnn4p",
-    "sentiment_label": "fear",
-    "sentiment_score": 0.5748,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6745,
     "sentiment_captions_used": [
       "they lied about going to bed early",
       "meme poster looks horrible after not sleeping right the night before",
@@ -22497,6 +22911,7 @@
       "they go to sleep around 6 am or so, meaning they do all nighters"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "fear": 1
     }
   },
@@ -22541,8 +22956,8 @@
       }
     ],
     "post_id": "zcr82o",
-    "sentiment_label": "sadness",
-    "sentiment_score": 0.8251,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.688,
     "sentiment_captions_used": [
       "they have no patience for xbox updates",
       "ready to enjoy playing xbox after taking the sat but can't because it needs to update after the long layoff",
@@ -22550,6 +22965,7 @@
       "poster knows xbox updates will take a long time"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "sadness": 2
     }
   },
@@ -22597,7 +23013,8 @@
     "sentiment_votes": {
       "anger": 1,
       "joy": 1,
-      "disgust": 1
+      "disgust": 1,
+      "neutral": 1
     }
   },
   {
@@ -22629,8 +23046,8 @@
       }
     ],
     "post_id": "zct4qv",
-    "sentiment_label": "anger",
-    "sentiment_score": 0.6884,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.5001,
     "sentiment_captions_used": [
       "meme poster video game developers always point to the one version of a buggy video game that turned good when they release their buggy game",
       "meme poster video game companies need to stop pointing to the one example of a buggy video game at launch getting better when they release their buggy games",
@@ -22638,6 +23055,7 @@
       "meme poster no man's sky is over-hyped and that this is something aaa video game publishers often do. they want this to stop and for publishers to be more realistic about their games"
     ],
     "sentiment_votes": {
+      "neutral": 3,
       "anger": 1
     }
   },
@@ -22665,14 +23083,15 @@
       }
     ],
     "post_id": "zctyu4",
-    "sentiment_label": "disgust",
-    "sentiment_score": 0.8839,
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6316,
     "sentiment_captions_used": [
       "people in ohio need special help when they are dancing around",
       "residents in ohio needs odor eaters to survive the humidity to feel good",
       "the irony of people dressing up well to go to the club when they still have nasty habits that are on display"
     ],
     "sentiment_votes": {
+      "neutral": 2,
       "disgust": 1
     }
   },
@@ -22705,6 +23124,7 @@
     ],
     "sentiment_votes": {
       "disgust": 1,
+      "neutral": 1,
       "surprise": 1
     }
   },
@@ -22742,6 +23162,7 @@
       "confused why everyone doesn't like james corden but doesn't feel comfortable asking"
     ],
     "sentiment_votes": {
+      "neutral": 1,
       "surprise": 2,
       "anger": 1
     }
