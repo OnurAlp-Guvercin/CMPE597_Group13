@@ -213,13 +213,11 @@ The cross-attention mechanism allows the model to learn _which textual concepts 
 
 ### Results
 
-_(To be filled in after final run)_
-
 | Metric      | Image-only MLP | Caption-only MLP | **CAFN** |
 | ----------- | :------------: | :--------------: | :------: |
-| Accuracy    |     23.81%     |      36.51%      |    —     |
-| Macro F1    |     0.1983     |      0.3533      |    —     |
-| Weighted F1 |     0.2584     |      0.3634      |    —     |
+| Accuracy    |     23.81%     |      36.51%      | 38.89%.  |
+| Macro F1    |     0.1983     |      0.3533      |  0.3335  |
+| Weighted F1 |     0.2584     |      0.3634      |  0.4040  |
 
 ### Discussion
 
