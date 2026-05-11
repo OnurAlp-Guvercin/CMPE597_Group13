@@ -88,74 +88,102 @@ python main.py --task lora --fusion_strategy weighted_sum --device cuda:0
 
 Source: [`outputs/results.json`](./outputs/results.json)
 
-All five fusion strategies evaluated across all three setups. Bold = best per column.
+Results are split into two sections per model:
+- **Type 1 — Image Only (No Fusion):** the fusion module is never called; the query is the raw image embedding.
+- **Type 2 — Image + Title (With Fusion):** image and title embeddings are combined via the listed fusion strategy.
+
+Bold = best per column within each section.
+
+---
 
 ### Zero-shot CLIP
 
-Type 1 is fusion-independent (single image embedding). Type 2 fuses image + title embeddings.
+#### Type 1 — Image Only (No Fusion)
 
-| Fusion Strategy | Type | R@1 | R@5 | R@10 | MedR | MRR |
-|---|:---:|---:|---:|---:|---:|---:|
-| — | 1 | 45.26% | 64.76% | 68.87% | 2 | 54.23% |
-| concat_project | 2 | 0.36% | 1.25% | 2.15% | 290 | 1.47% |
-| cross_attention | 2 | 6.62% | 11.27% | 13.24% | 164 | 9.54% |
-| gated | 2 | 15.56% | 27.19% | 32.92% | 40 | 21.56% |
-| add | 2 | 19.68% | 30.77% | 35.42% | 31 | 25.77% |
-| **weighted_sum** | **2** | **36.85%** | **56.89%** | **61.00%** | **3** | **45.66%** |
+Single result — zero-shot CLIP is not trained, so there is one Type 1 evaluation.
+
+| R@1 | R@5 | R@10 | MedR | MRR |
+|---:|---:|---:|---:|---:|
+| **45.26%** | **64.76%** | **68.87%** | **2** | **54.23%** |
+
+#### Type 2 — Image + Title (With Fusion)
+
+CLIP backbone is frozen; the fusion module has random (untrained) weights.
+
+| Fusion Strategy | R@1 | R@5 | R@10 | MedR | MRR |
+|---|---:|---:|---:|---:|---:|
+| concat_project | 0.36% | 1.25% | 2.15% | 290 | 1.47% |
+| cross_attention | 6.62% | 11.27% | 13.24% | 164 | 9.54% |
+| gated | 15.56% | 27.19% | 32.92% | 40 | 21.56% |
+| add | 19.68% | 30.77% | 35.42% | 31 | 25.77% |
+| **weighted_sum** | **36.85%** | **56.89%** | **61.00%** | **3** | **45.66%** |
+
+---
 
 ### Custom Dual Encoder
 
-| Fusion Strategy | Type | R@1 | R@5 | R@10 | MedR | MRR |
-|---|:---:|---:|---:|---:|---:|---:|
-| concat_project | 1 | 1.43% | 3.76% | 6.44% | 170 | 3.73% |
-| cross_attention | 1 | 0.72% | 5.01% | 7.16% | 172 | 3.41% |
-| add | 1 | 0.72% | 4.11% | 5.72% | 178 | 3.05% |
-| weighted_sum | 1 | 0.72% | 4.11% | 5.72% | 178 | 3.05% |
-| **gated** | **1** | **1.07%** | **4.29%** | **6.98%** | **177** | **3.45%** |
-| concat_project | 2 | 2.68% | 6.80% | 11.63% | 125 | 6.04% |
-| weighted_sum | 2 | 9.66% | 16.28% | 21.82% | 103 | 14.19% |
-| cross_attention | 2 | 11.09% | 19.32% | 23.79% | 92 | 15.66% |
-| add | 2 | 11.63% | 19.50% | 25.04% | 76 | 16.20% |
-| **gated** | **2** | **12.34%** | **19.50%** | **24.87%** | **66** | **16.88%** |
+#### Type 1 — Image Only (No Fusion)
+
+Best result across 5 training runs (fusion module never called for Type 1).
+
+| R@1 | R@5 | R@10 | MedR | MRR |
+|---:|---:|---:|---:|---:|
+| **1.43%** | **3.76%** | **6.44%** | **170** | **3.73%** |
+
+#### Type 2 — Image + Title (With Fusion)
+
+| Fusion Strategy | R@1 | R@5 | R@10 | MedR | MRR |
+|---|---:|---:|---:|---:|---:|
+| concat_project | 2.68% | 6.80% | 11.63% | 125 | 6.04% |
+| weighted_sum | 9.66% | 16.28% | 21.82% | 103 | 14.19% |
+| cross_attention | 11.09% | 19.32% | 23.79% | 92 | 15.66% |
+| add | 11.63% | 19.50% | 25.04% | 76 | 16.20% |
+| **gated** | **12.34%** | **19.50%** | **24.87%** | **66** | **16.88%** |
+
+---
 
 ### CLIP + LoRA
 
-| Fusion Strategy | Type | R@1 | R@5 | R@10 | MedR | MRR |
-|---|:---:|---:|---:|---:|---:|---:|
-| add | 1 | 49.55% | 67.98% | 73.35% | 2 | 58.32% |
-| weighted_sum | 1 | 49.55% | 67.98% | 73.35% | 2 | 58.32% |
-| cross_attention | 1 | 49.73% | 68.34% | 73.35% | 2 | 58.48% |
-| concat_project | 1 | 52.77% | 69.23% | 73.70% | 1 | 60.57% |
-| **gated** | **1** | **52.95%** | **69.23%** | **73.88%** | **1** | **60.64%** |
-| concat_project | 2 | 23.26% | 47.76% | 57.96% | 7 | 34.60% |
-| cross_attention | 2 | 27.37% | 46.15% | 54.38% | 7 | 36.46% |
-| gated | 2 | 56.17% | 72.45% | 77.82% | 1 | 63.80% |
-| add | 2 | 53.31% | 70.30% | 76.21% | 1 | 60.70% |
-| **weighted_sum** | **2** | **58.14%** | **74.06%** | **77.28%** | **1** | **65.46%** |
+#### Type 1 — Image Only (No Fusion)
+
+Best result across 5 training runs (fusion module never called for Type 1).
+
+| R@1 | R@5 | R@10 | MedR | MRR |
+|---:|---:|---:|---:|---:|
+| **52.95%** | **69.23%** | **73.88%** | **1** | **60.64%** |
+
+#### Type 2 — Image + Title (With Fusion)
+
+| Fusion Strategy | R@1 | R@5 | R@10 | MedR | MRR |
+|---|---:|---:|---:|---:|---:|
+| concat_project | 23.26% | 47.76% | 57.96% | 7 | 34.60% |
+| cross_attention | 27.37% | 46.15% | 54.38% | 7 | 36.46% |
+| add | 53.31% | 70.30% | 76.21% | 1 | 60.70% |
+| gated | 56.17% | 72.45% | 77.82% | 1 | 63.80% |
+| **weighted_sum** | **58.14%** | **74.06%** | **77.28%** | **1** | **65.46%** |
 
 ## Key Insights
 
-1. **`weighted_sum` is the best overall fusion for CLIP-based models (Type 2).**
+1. **`weighted_sum` is the best fusion strategy for CLIP-based models (Type 2).**
    - Zero-shot Type 2: `weighted_sum` R@1 36.85% vs `concat_project` 0.36% — a complete collapse with naive concatenation.
-   - LoRA Type 2: `weighted_sum` achieves the best result overall (R@1 58.14%, MRR 65.46%).
-   - `concat_project` and `cross_attention` both fail to generalize in the zero-shot setting for Type 2.
+   - LoRA Type 2: `weighted_sum` achieves the best overall result (R@1 58.14%, MRR 65.46%).
 
 2. **`gated` fusion is the best for the custom dual encoder (Type 2).**
    - Gated achieves the best MedR (66) and MRR (16.88%) among all Type 2 custom runs.
-   - The gap between strategies is smaller here because the custom model is generally weak regardless.
+   - The gap between strategies is smaller because the model is generally weak regardless — a representation quality issue.
 
-3. **Type 1 results are nearly fusion-independent.**
-   - Zero-shot Type 1 is identical across all strategies (as expected — single image embedding, no fusion).
-   - LoRA/Custom Type 1 differences across strategies are marginal (<3% R@1), suggesting the image branch dominates.
+3. **Type 1 uses no fusion — results reflect pure image representation quality.**
+   - The fusion module is never called for Type 1 queries (see `custom_model.py:165`, `trainer.py:103`).
+   - For Custom/LoRA, different "model variant" rows represent separately trained models with different (unused) fusion modules; minor differences come from random initialization.
 
 4. **CLIP pretraining is the dominant factor.**
-   - LoRA (Type 1) R@1 ~50-53% vs Custom (Type 1) R@1 ~0.7-1.4% — over 40 percentage points difference.
-   - No fusion strategy closes this gap; it is a representation quality issue.
+   - LoRA (Type 1) R@1 ~50–53% vs Custom (Type 1) R@1 ~0.7–1.4% — over 40 percentage points difference.
+   - No fusion strategy closes this gap.
 
 5. **Practical recommendations:**
    - Best overall: `CLIP + LoRA`, Type 2, `weighted_sum` (R@1 58.14%, MedR 1).
-   - No-training baseline: Zero-shot Type 1 (R@1 45.26%) or Zero-shot Type 2 with `weighted_sum` (R@1 36.85%).
-   - Avoid `concat_project` for zero-shot Type 2 — it collapses entirely.
+   - No-training baseline: Zero-shot Type 1 (R@1 45.26%).
+   - Avoid `concat_project` for zero-shot Type 2 — it collapses entirely (R@1 0.36%).
 
 ## Reproducibility Artifacts
 
