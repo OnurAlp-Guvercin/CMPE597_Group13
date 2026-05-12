@@ -1,29 +1,3 @@
-"""
-Task 2.3(c) — Custom Multimodal Fusion Architecture for Meme Sentiment Classification
-======================================================================================
-
-Architecture: CrossModal Attention Fusion Network (CAFN)
----------------------------------------------------------
-Rather than simply concatenating CLIP image and caption embeddings (late fusion),
-this model learns *cross-modal interactions* via a lightweight cross-attention block
-before classification. The pipeline:
-
-    1. CLIP image embedding  (512-d)  →  Image projection head  →  256-d
-    2. CLIP caption embedding (512-d) →  Text projection head   →  256-d
-    3. Cross-attention: image queries attend to text keys/values (and vice versa)
-    4. Gated fusion: learned scalar gates weight each modality's attended output
-    5. Concatenate gated outputs  →  512-d
-    6. Classification head with residual connection  →  7 classes
-
-Additional design choices vs. part (b):
-  • Label smoothing (ε=0.1) instead of hard cross-entropy, to reduce overconfidence
-    on noisy labels identified in 2.3(a).
-  • Mixup augmentation on embeddings to improve minority-class generalisation.
-  • Cosine-annealing LR schedule with warm-up.
-  • Optional modality dropout during training (randomly zero one modality per sample)
-    so the model stays robust when an image is missing.
-"""
-
 from __future__ import annotations
 
 import json
